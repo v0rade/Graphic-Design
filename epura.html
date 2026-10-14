@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÉPURA FORMULARY™ — Brand Identity & Packaging Design System</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+    :root {
+      --serif: 'Cormorant Garamond', 'Didot', 'Bodoni MT', 'Cinzel', Georgia, serif;
+      --sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --mono: 'Space Mono', 'SF Mono', Consolas, monospace;
+    }
+
+    .font-editorial { font-family: var(--serif); }
+    .font-sans-clean { font-family: var(--sans); }
+    .font-technical { font-family: var(--mono); }
+
+    /* Custom subtle textures & lighting */
+    .paper-texture {
+      background-color: #F8F6F0;
+      background-image: radial-gradient(#d3cebe 0.75px, transparent 0.75px), radial-gradient(#d3cebe 0.75px, #F8F6F0 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+
+    .glass-reflection {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.05) 45%, rgba(255, 255, 255, 0.2) 100%);
+    }
+
+    .deboss-effect {
+      box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25), inset -1px -1px 2px rgba(255, 255, 255, 0.4);
+    }
+
+    .product-shadow {
+      filter: drop-shadow(0 25px 25px rgba(28, 30, 27, 0.15)) drop-shadow(0 40px 60px rgba(28, 30, 27, 0.1));
+    }
+
+    .foil-sheen {
+      background: linear-gradient(120deg, #d6d3cb 0%, #ffffff 40%, #c4c0b4 60%, #dedbd2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Smooth transitions */
+    .tab-btn.active {
+      background-color: #1A1D1A;
+      color: #F8F6F0;
+      border-color: #1A1D1A;
+    }
+  </style>
+</head>
+<body class="bg-[#121413] text-[#E8E6DF] font-sans-clean antialiased selection:bg-[#BC7152] selection:text-white">
+
+  <!-- TOP EDITORIAL BAR -->
+  <header class="border-b border-[#262A27] bg-[#121413]/90 backdrop-blur sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <span class="text-xs tracking-[0.25em] uppercase font-technical text-[#8A8F8A]">CASE STUDY / 2026</span>
+        <span class="text-[#3A3F3B]">•</span>
+        <span class="text-xs tracking-wider uppercase font-sans-clean text-[#D0CDC4]">BEHANCE FEATURED CURATION</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#overview" class="text-xs uppercase tracking-widest text-[#9A9E99] hover:text-white transition">Overview</a>
+        <a href="#identity" class="text-xs uppercase tracking-widest text-[#9A9E99] hover:text-white transition">Identity</a>
+        <a href="#packaging" class="text-xs uppercase tracking-widest text-[#9A9E99] hover:text-white transition">Packaging</a>
+        <a href="#stationery" class="text-xs uppercase tracking-widest text-[#9A9E99] hover:text-white transition">Print Collateral</a>
+        <a href="#digital" class="text-xs uppercase tracking-widest text-[#9A9E99] hover:text-white transition">Social Media</a>
+        <span class="px-2.5 py-1 text-[11px] font-technical uppercase border border-[#BC7152]/40 text-[#BC7152] rounded-full">Award Winner</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO COVER (BEHANCE HERO STYLE) -->
+  <section class="relative min-h-[92vh] flex flex-col justify-between p-8 md:p-16 border-b border-[#262A27] overflow-hidden bg-gradient-to-b from-[#161917] via-[#121413] to-[#0E100F]">
+    <!-- Ambient subtle background glow -->
+    <div class="absolute -top-40 right-10 w-[600px] h-[600px] bg-[#BC7152]/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-[500px] h-[500px] bg-[#7B8C77]/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto w-full z-10 pt-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-[#262A27] pb-8 mb-12">
+        <div>
+          <p class="text-xs font-technical text-[#BC7152] uppercase tracking-[0.3em] mb-3">CLIENT: ÉPURA LABORATORIES (PARIS &amp; STOCKHOLM)</p>
+          <h1 class="font-editorial text-6xl md:text-8xl lg:text-9xl tracking-tight text-[#FAF8F5] leading-[0.9]">
+            É P U R A
+          </h1>
+          <p class="font-editorial italic text-2xl md:text-3xl text-[#A39E93] mt-2 font-light">
+            Formulary 01 — Biomimetic Restorative Skincare
+          </p>
+        </div>
+        <div class="mt-8 md:mt-0 max-w-sm text-right">
+          <p class="text-xs font-technical uppercase tracking-widest text-[#8A8F8A] mb-1">DISCIPLINE</p>
+          <p class="text-sm text-[#D8D4C9]">Brand Identity, Structural Packaging, Editorial Direction &amp; Digital Campaign</p>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL MOCKUP COMPOSITION -->
+      <div class="relative w-full h-[480px] md:h-[580px] bg-[#1A1D1B] rounded-2xl border border-[#2D332F] overflow-hidden flex items-center justify-center shadow-2xl">
+        <!-- Background architectural shadow grid -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px); background-size: 80px 80px;"></div>
+        
+        <!-- Center Mockup Group (Pure Vector SVG Illustration of Luxury Packaging) -->
+        <div class="relative z-10 flex items-end justify-center gap-6 md:gap-14 scale-90 md:scale-105 transition-transform duration-500 hover:scale-110">
+          
+          <!-- BOTTLE 1: Cellular Recovery Serum (Dropper Bottle) -->
+          <div class="flex flex-col items-center group cursor-pointer">
+            <div class="relative product-shadow">
+              <svg width="150" height="340" viewBox="0 0 150 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Drop shadow base -->
+                <ellipse cx="75" cy="330" rx="60" ry="10" fill="#000000" fill-opacity="0.35"/>
+                
+                <!-- Rubber Dropper Bulb -->
+                <path d="M60 12C60 5.37258 65.3726 0 72 0H78C84.6274 0 90 5.37258 90 12V32H60V12Z" fill="#1C1E1B"/>
+                
+                <!-- Metal Collar (Brushed Silver) -->
+                <rect x="54" y="32" width="42" height="26" rx="2" fill="url(#silverCollar)"/>
+                <line x1="54" y1="45" x2="96" y2="45" stroke="#99978E" stroke-width="0.8"/>
+                
+                <!-- Dropper Neck Ring -->
+                <rect x="50" y="58" width="50" height="8" rx="1" fill="#1C1E1B"/>
+                
+                <!-- Amber / Frosted Glass Body -->
+                <rect x="25" y="66" width="100" height="260" rx="14" fill="url(#frostedAmber)"/>
+                
+                <!-- Inner liquid meniscus line -->
+                <rect x="28" y="90" width="94" height="232" rx="10" fill="url(#serumLiquid)" fill-opacity="0.75"/>
+                
+                <!-- Minimalist Textured Label Wrap -->
+                <rect x="25" y="115" width="100" height="155" fill="#F8F6F0"/>
+                <!-- Subtle label side shading -->
+                <rect x="25" y="115" width="10" height="155" fill="black" fill-opacity="0.08"/>
+                <rect x="115" y="115" width="10" height="155" fill="black" fill-opacity="0.08"/>
+                
+                <!-- Label Typography & Content -->
+                <text x="75" y="142" font-family="'Cormorant Garamond', serif" font-size="15" font-weight="600" letter-spacing="4" fill="#1C1E1B" text-anchor="middle">É P U R A</text>
+                <text x="75" y="156" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1.5" fill="#757770" text-anchor="middle">FORMULARY 01</text>
+                <line x1="45" y1="164" x2="105" y2="164" stroke="#BC7152" stroke-width="0.7"/>
+                <text x="75" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#1C1E1B" text-anchor="middle">CELLULAR RECOVERY</text>
+                <text x="75" y="190" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-style="italic" fill="#50524C" text-anchor="middle">Biomimetic Lipid Serum</text>
+                
+                <text x="75" y="214" font-family="'Space Mono', monospace" font-size="4.5" fill="#6A6C65" text-anchor="middle">0.8% ECTOIN • 5% CENTELLA</text>
+                <text x="75" y="224" font-family="'Space Mono', monospace" font-size="4.5" fill="#6A6C65" text-anchor="middle">CERAMIDE COMPLEX NP/AP</text>
+                
+                <rect x="68" y="235" width="14" height="14" rx="7" stroke="#1C1E1B" stroke-width="0.6"/>
+                <text x="75" y="244" font-family="'Cormorant Garamond', serif" font-size="7" font-weight="600" fill="#1C1E1B" text-anchor="middle">É</text>
+                
+                <text x="75" y="260" font-family="'Space Mono', monospace" font-size="4" letter-spacing="0.5" fill="#888B83" text-anchor="middle">30 ML / 1.0 FL. OZ. — LAB NO. 402</text>
+                
+                <!-- Glass Specular Highlight -->
+                <path d="M30 72C30 72 35 150 35 320" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.25"/>
+                <path d="M120 72C120 72 118 150 118 320" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.12"/>
+              </svg>
+            </div>
+            <span class="mt-4 text-[11px] font-technical uppercase text-[#9EA39B] tracking-widest">No. 01 / Serum 30ml</span>
+          </div>
+
+          <!-- BOTTLE 2: Biomimetic Barrier Cream (Ceramic Jar) -->
+          <div class="flex flex-col items-center group cursor-pointer mb-2">
+            <div class="relative product-shadow">
+              <svg width="200" height="230" viewBox="0 0 200 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Shadow -->
+                <ellipse cx="100" cy="222" rx="85" ry="12" fill="#000000" fill-opacity="0.4"/>
+                
+                <!-- Ceramic Jar Lid (Recessed Debossed Cap) -->
+                <path d="M22 36C22 28 28 22 36 22H164C172 22 178 28 178 36V62H22V36Z" fill="#181B18"/>
+                <ellipse cx="100" cy="24" rx="76" ry="6" fill="#242824"/>
+                <!-- Debossed Cap Seal -->
+                <ellipse cx="100" cy="38" rx="20" ry="4" stroke="#363C37" stroke-width="0.8"/>
+                <text x="100" y="40" font-family="'Cormorant Garamond', serif" font-size="9" fill="#586059" text-anchor="middle">ÉPURA</text>
+
+                <!-- Jar Body (Alabaster Matte Ceramic) -->
+                <rect x="18" y="62" width="164" height="152" rx="14" fill="url(#alabasterCeramic)"/>
+                <!-- Ceramic texture edge gradient -->
+                <rect x="18" y="62" width="14" height="152" fill="black" fill-opacity="0.06"/>
+                <rect x="168" y="62" width="14" height="152" fill="black" fill-opacity="0.06"/>
+
+                <!-- Wrap-around Technical Label Screen Print -->
+                <text x="100" y="98" font-family="'Cormorant Garamond', serif" font-size="18" font-weight="600" letter-spacing="4" fill="#1C1E1B" text-anchor="middle">É P U R A</text>
+                <text x="100" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" letter-spacing="2" fill="#80827B" text-anchor="middle">CLINICAL BOTANY</text>
+                
+                <line x1="60" y1="122" x2="140" y2="122" stroke="#1C1E1B" stroke-width="0.6"/>
+
+                <text x="100" y="138" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#1C1E1B" text-anchor="middle">BARRIER RESTORE CREAM</text>
+                <text x="100" y="150" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-style="italic" fill="#565851" text-anchor="middle">Rich Biomimetic Emulsion</text>
+
+                <text x="100" y="172" font-family="'Space Mono', monospace" font-size="5" fill="#72756E" text-anchor="middle">PHYTO-SQUALANE • 3% NIACINAMIDE</text>
+                <text x="100" y="182" font-family="'Space Mono', monospace" font-size="5" fill="#72756E" text-anchor="middle">NET WT. 50 ML / 1.7 FL. OZ. e</text>
+
+                <!-- Subtle ceramic sheen highlight -->
+                <path d="M26 66C26 66 32 120 32 206" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.35"/>
+              </svg>
+            </div>
+            <span class="mt-4 text-[11px] font-technical uppercase text-[#9EA39B] tracking-widest">No. 02 / Cream 50ml</span>
+          </div>
+
+          <!-- BOTTLE 3: Pure Aluminum Squeeze Tube -->
+          <div class="flex flex-col items-center group cursor-pointer hidden sm:flex">
+            <div class="relative product-shadow">
+              <svg width="130" height="320" viewBox="0 0 130 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Shadow -->
+                <ellipse cx="65" cy="312" rx="45" ry="8" fill="#000000" fill-opacity="0.35"/>
+                
+                <!-- Screw Octagonal Cap -->
+                <polygon points="50,290 80,290 85,306 45,306" fill="#1C1E1B"/>
+                <rect x="44" y="306" width="42" height="6" rx="1" fill="#2E322D"/>
+
+                <!-- Aluminum Tube Body (Crimped on top) -->
+                <path d="M20 20H110V22C110 22 104 200 90 286H40C26 200 20 22 20 22V20Z" fill="url(#rawAluminum)"/>
+                
+                <!-- Crimped top seal -->
+                <rect x="18" y="10" width="94" height="12" fill="#BEBCB4"/>
+                <line x1="18" y1="14" x2="112" y2="14" stroke="#94928A" stroke-width="0.8"/>
+                <line x1="18" y1="18" x2="112" y2="18" stroke="#94928A" stroke-width="0.8"/>
+                <text x="65" y="19" font-family="'Space Mono', monospace" font-size="4" fill="#5A5954" text-anchor="middle">LOT: EP-8891 // EXP 2028</text>
+
+                <!-- Minimal Silkscreen Type on Aluminum -->
+                <text x="65" y="70" font-family="'Cormorant Garamond', serif" font-size="14" font-weight="600" letter-spacing="3" fill="#181B18" text-anchor="middle">É P U R A</text>
+                <text x="65" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1.2" fill="#505450" text-anchor="middle">LIPID BALM</text>
+                
+                <text x="65" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="600" fill="#181B18" text-anchor="middle">INTENSE REPAIR</text>
+                <text x="65" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" fill="#505450" text-anchor="middle">For Dry &amp; Compromised Skin</text>
+
+                <rect x="58" y="140" width="14" height="2" fill="#BC7152"/>
+
+                <text x="65" y="165" font-family="'Space Mono', monospace" font-size="4" fill="#5E635E" text-anchor="middle">CENTELLA BIO-FERMENT</text>
+                <text x="65" y="174" font-family="'Space Mono', monospace" font-size="4" fill="#5E635E" text-anchor="middle">ORGANIC SHEA ESTERS</text>
+                <text x="65" y="240" font-family="'Space Mono', monospace" font-size="4.5" fill="#5E635E" text-anchor="middle">40 ML / 1.35 FL. OZ.</text>
+
+                <!-- Metallic Reflections -->
+                <path d="M30 25C30 25 36 150 48 280" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.3"/>
+                <path d="M100 25C100 25 94 150 82 280" stroke="black" stroke-width="2" stroke-linecap="round" stroke-opacity="0.1"/>
+              </svg>
+            </div>
+            <span class="mt-4 text-[11px] font-technical uppercase text-[#9EA39B] tracking-widest">No. 03 / Balm 40ml</span>
+          </div>
+
+        </div>
+
+        <!-- SVG Gradients Definition Block -->
+        <svg width="0" height="0" class="absolute">
+          <defs>
+            <linearGradient id="silverCollar" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#C2C0B8" />
+              <stop offset="35%" stop-color="#F2EFE9" />
+              <stop offset="70%" stop-color="#A8A59C" />
+              <stop offset="100%" stop-color="#E4E1D8" />
+            </linearGradient>
+            <linearGradient id="frostedAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1B1D19" />
+              <stop offset="25%" stop-color="#36332A" />
+              <stop offset="50%" stop-color="#4A4538" />
+              <stop offset="75%" stop-color="#2D2B23" />
+              <stop offset="100%" stop-color="#181916" />
+            </linearGradient>
+            <linearGradient id="serumLiquid" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#544B36" />
+              <stop offset="100%" stop-color="#2D271B" />
+            </linearGradient>
+            <linearGradient id="alabasterCeramic" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#E2DDD4" />
+              <stop offset="20%" stop-color="#F7F5F0" />
+              <stop offset="70%" stop-color="#EAE5DC" />
+              <stop offset="100%" stop-color="#D7D1C6" />
+            </linearGradient>
+            <linearGradient id="rawAluminum" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#AEACA2" />
+              <stop offset="30%" stop-color="#E8E5DD" />
+              <stop offset="60%" stop-color="#CBC7BE" />
+              <stop offset="85%" stop-color="#F5F3ED" />
+              <stop offset="100%" stop-color="#A5A39B" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <!-- Aesthetic watermark sticker -->
+        <div class="absolute bottom-5 right-6 flex items-center gap-3 bg-[#111312]/80 backdrop-blur px-3 py-1.5 rounded border border-[#2B302C]">
+          <span class="w-2 h-2 rounded-full bg-[#BC7152] animate-pulse"></span>
+          <span class="text-[10px] font-technical uppercase tracking-widest text-[#9FA49D]">STUDIO 3D RENDERING // 8K EQUIVALENT</span>
+        </div>
+      </div>
+
+      <!-- KEY METRICS ROW -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 text-left">
+        <div>
+          <span class="block text-xs font-technical uppercase text-[#BC7152] mb-1">FOUNDATION</span>
+          <p class="font-editorial text-2xl text-[#FAF8F5]">Subtractive Botany</p>
+          <p class="text-xs text-[#8A8F8A] mt-1">Eliminating inert fillers for active bio-ferments.</p>
+        </div>
+        <div>
+          <span class="block text-xs font-technical uppercase text-[#BC7152] mb-1">TYPOGRAPHY</span>
+          <p class="font-editorial text-2xl text-[#FAF8F5]">Cormorant &amp; Swiss Neo</p>
+          <p class="text-xs text-[#8A8F8A] mt-1">Transitional elegance meets clinical discipline.</p>
+        </div>
+        <div>
+          <span class="block text-xs font-technical uppercase text-[#BC7152] mb-1">SUSTAINABILITY</span>
+          <p class="font-editorial text-2xl text-[#FAF8F5]">100% Circular Post-Recycled</p>
+          <p class="text-xs text-[#8A8F8A] mt-1">Alabaster ceramic, amber glass, raw aluminum.</p>
+        </div>
+        <div>
+          <span class="block text-xs font-technical uppercase text-[#BC7152] mb-1">MARKET TIER</span>
+          <p class="font-editorial text-2xl text-[#FAF8F5]">High Prestige Clinical</p>
+          <p class="text-xs text-[#8A8F8A] mt-1">Positioned alongside Aesop, Augustinus Bader &amp; Le Labo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 1: THE BRAND MANIFESTO & STRATEGY -->
+  <section id="overview" class="py-24 px-6 md:px-16 border-b border-[#262A27] bg-[#141615]">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-4">
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-3">01 / STRATEGIC ESSENCE</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF8F5] leading-tight">
+            Restraint as the ultimate form of luxury.
+          </h2>
+          <div class="w-16 h-[1px] bg-[#BC7152] my-6"></div>
+          <p class="text-sm leading-relaxed text-[#9DA29C]">
+            The skincare market is overwhelmed by decorative maximalism, hyper-glossy pastel renders, and pseudo-scientific buzzwords. ÉPURA was conceived to break through the visual clutter by adopting an uncompromising editorial rigor.
+          </p>
+        </div>
+
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Pillar 1 -->
+          <div class="p-8 bg-[#1B1E1C] rounded-xl border border-[#2D332E] hover:border-[#BC7152]/50 transition duration-300">
+            <span class="text-xs font-technical text-[#BC7152] block mb-4">PILLAR 01</span>
+            <h3 class="font-editorial text-2xl text-[#FAF8F5] mb-3">Molecular Precision</h3>
+            <p class="text-xs text-[#9DA29C] leading-relaxed">
+              Every percentage is declared on the front panel. Typography functions with laboratory clarity, treating the consumer as an informed connoisseur rather than a passive target.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-8 bg-[#1B1E1C] rounded-xl border border-[#2D332E] hover:border-[#BC7152]/50 transition duration-300">
+            <span class="text-xs font-technical text-[#BC7152] block mb-4">PILLAR 02</span>
+            <h3 class="font-editorial text-2xl text-[#FAF8F5] mb-3">Tactile Honest Materials</h3>
+            <p class="text-xs text-[#9DA29C] leading-relaxed">
+              Weight, temperature, and haptic feedback dictate the package. Uncoated FSC 350gsm paper, heavy frosted amber glass, matte alabaster ceramics, and raw crimped aluminum.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-8 bg-[#1B1E1C] rounded-xl border border-[#2D332E] hover:border-[#BC7152]/50 transition duration-300">
+            <span class="text-xs font-technical text-[#BC7152] block mb-4">PILLAR 03</span>
+            <h3 class="font-editorial text-2xl text-[#FAF8F5] mb-3">Architectural Whitespace</h3>
+            <p class="text-xs text-[#9DA29C] leading-relaxed">
+              Content is framed with deliberate spatial tension. By honoring empty margins, the typography breathes and commands immediate visual authority on bathroom vanities and retail counters.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: LOGOTYPE & CONSTRUCTION SYSTEM -->
+  <section id="identity" class="py-24 px-6 md:px-16 border-b border-[#262A27] bg-[#121413]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#262A27]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">02 / VISUAL IDENTITY</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF8F5]">Wordmark &amp; Construction Matrix</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">OPTICAL BALANCING // 1.618 GOLDEN RATIO KERNING</p>
+      </div>
+
+      <!-- MAIN LOGO DISPLAY ON PAPER -->
+      <div class="paper-texture text-[#1A1D1A] p-12 md:p-24 rounded-2xl shadow-inner border border-[#E0DBCF] mb-12 relative overflow-hidden">
+        
+        <!-- Measurement Blueprint Overlay -->
+        <div class="absolute inset-0 pointer-events-none opacity-25">
+          <div class="w-full h-full" style="background-image: linear-gradient(to right, #1A1D1A 1px, transparent 1px), linear-gradient(to bottom, #1A1D1A 1px, transparent 1px); background-size: 30px 30px;"></div>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center justify-center text-center">
+          <!-- Construction lines indicator -->
+          <div class="w-full max-w-xl border-t border-dashed border-[#1A1D1A]/30 mb-8 relative">
+            <span class="absolute -top-3 left-0 text-[9px] font-technical text-[#6C7069]">CAP-HEIGHT [100%]</span>
+            <span class="absolute -top-3 right-0 text-[9px] font-technical text-[#6C7069]">BASELINE [0%]</span>
+          </div>
+
+          <div class="relative py-4 px-8 border border-dashed border-[#1A1D1A]/30 rounded">
+            <!-- X-Height Safety margin box -->
+            <span class="absolute -top-2.5 -left-2.5 text-[8px] font-technical bg-[#1A1D1A] text-white px-1.5 py-0.5 rounded">CLEARANCE 2X</span>
+            <h3 class="font-editorial text-7xl md:text-9xl tracking-[0.28em] font-medium leading-none text-[#181B18] pl-[0.28em]">
+              ÉPURA
+            </h3>
+            <p class="font-sans-clean text-[10px] md:text-xs font-semibold tracking-[0.45em] text-[#555953] uppercase mt-4 text-center">
+              FORMULARY PARIS • STOCKHOLM
+            </p>
+          </div>
+
+          <div class="w-full max-w-xl border-b border-dashed border-[#1A1D1A]/30 mt-8 relative">
+            <span class="absolute top-2 left-1/2 -translate-x-1/2 text-[9px] font-technical text-[#6C7069]">TRACKING FACTOR: +350/1000EM</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MONOGRAM & SECONDARY EMBLEMS -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Mark 1: The Monogram Seal -->
+        <div class="p-8 bg-[#181B19] rounded-xl border border-[#2D332E] flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-full border border-[#FAF8F5]/30 flex items-center justify-center mb-6 relative">
+            <span class="font-editorial text-5xl font-light text-[#FAF8F5]">É</span>
+            <div class="absolute inset-0 rounded-full border border-dashed border-[#BC7152]/50 animate-spin" style="animation-duration: 25s;"></div>
+          </div>
+          <h4 class="font-editorial text-xl text-[#FAF8F5] mb-1">Botanical Monogram</h4>
+          <p class="text-xs text-[#8A8F8A]">Debossed on primary product closures and wax tamper seals.</p>
+        </div>
+
+        <!-- Mark 2: Apothecary Coordinate Seal -->
+        <div class="p-8 bg-[#181B19] rounded-xl border border-[#2D332E] flex flex-col items-center text-center">
+          <div class="w-24 h-24 border border-[#3E4540] rounded flex flex-col items-center justify-center mb-6 p-2 bg-[#121413]">
+            <span class="text-[9px] font-technical text-[#BC7152]">LAB-01</span>
+            <span class="font-editorial text-2xl tracking-widest text-[#FAF8F5] my-0.5">É•F</span>
+            <span class="text-[8px] font-technical text-[#8A8F8A]">48.85°N / 2.35°E</span>
+          </div>
+          <h4 class="font-editorial text-xl text-[#FAF8F5] mb-1">Apothecary Stamp</h4>
+          <p class="text-xs text-[#8A8F8A]">Applied to laboratory test certifications and wholesale shipping cartons.</p>
+        </div>
+
+        <!-- Mark 3: Sustainability Verification -->
+        <div class="p-8 bg-[#181B19] rounded-xl border border-[#2D332E] flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-full bg-[#1F2320] flex flex-col items-center justify-center mb-6 border border-[#384039]">
+            <svg class="w-8 h-8 text-[#7B8C77] mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+            </svg>
+            <span class="text-[8px] font-technical text-[#9CA099]">FSC-RECYCLED</span>
+          </div>
+          <h4 class="font-editorial text-xl text-[#FAF8F5] mb-1">Eco-Integrity Hallmark</h4>
+          <p class="text-xs text-[#8A8F8A]">Standardized compliance badge blind-debossed on all outer boxes.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: COLOR SYSTEM & REFINED PALETTE -->
+  <section class="py-24 px-6 md:px-16 border-b border-[#262A27] bg-[#141615]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#262A27]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">03 / CHROMATIC ARCHITECTURE</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF8F5]">Mineral &amp; Organic Palette</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">CLICK ANY CHIP TO COPY SPECIFICATIONS</p>
+      </div>
+
+      <!-- PALETTE CARDS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        
+        <!-- Color 1: Alabaster Chalk -->
+        <div onclick="copyColor('F8F6F0', 'Alabaster Chalk')" class="group cursor-pointer bg-[#1B1E1C] p-5 rounded-xl border border-[#2D332E] hover:border-[#BC7152] transition">
+          <div class="h-36 rounded-lg mb-4 shadow-inner border border-[#E2DDD3]" style="background-color: #F8F6F0;"></div>
+          <span class="text-[10px] font-technical text-[#BC7152] block uppercase">PRIMARY LIGHT</span>
+          <h4 class="font-editorial text-xl text-[#FAF8F5] my-1">Alabaster Chalk</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#2A2E2C]">
+            <p>HEX: <span class="text-[#FAF8F5]">#F8F6F0</span></p>
+            <p>RGB: 248, 246, 240</p>
+            <p>PMS: 7527 CP</p>
+            <p>CMYK: 2, 2, 5, 0</p>
+          </div>
+        </div>
+
+        <!-- Color 2: Deep Basalt -->
+        <div onclick="copyColor('1C1E1B', 'Deep Basalt')" class="group cursor-pointer bg-[#1B1E1C] p-5 rounded-xl border border-[#2D332E] hover:border-[#BC7152] transition">
+          <div class="h-36 rounded-lg mb-4 shadow-inner border border-[#30332F]" style="background-color: #1C1E1B;"></div>
+          <span class="text-[10px] font-technical text-[#BC7152] block uppercase">PRIMARY DARK</span>
+          <h4 class="font-editorial text-xl text-[#FAF8F5] my-1">Deep Basalt</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#2A2E2C]">
+            <p>HEX: <span class="text-[#FAF8F5]">#1C1E1B</span></p>
+            <p>RGB: 28, 30, 27</p>
+            <p>PMS: Black 7 C</p>
+            <p>CMYK: 65, 55, 60, 85</p>
+          </div>
+        </div>
+
+        <!-- Color 3: Terracotta Kaolin -->
+        <div onclick="copyColor('BC7152', 'Terracotta Kaolin')" class="group cursor-pointer bg-[#1B1E1C] p-5 rounded-xl border border-[#2D332E] hover:border-[#BC7152] transition">
+          <div class="h-36 rounded-lg mb-4 shadow-inner border border-[#8C523A]" style="background-color: #BC7152;"></div>
+          <span class="text-[10px] font-technical text-[#BC7152] block uppercase">ACTIVE ACCENT</span>
+          <h4 class="font-editorial text-xl text-[#FAF8F5] my-1">Terracotta Kaolin</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#2A2E2C]">
+            <p>HEX: <span class="text-[#FAF8F5]">#BC7152</span></p>
+            <p>RGB: 188, 113, 82</p>
+            <p>PMS: 7586 C</p>
+            <p>CMYK: 15, 60, 70, 10</p>
+          </div>
+        </div>
+
+        <!-- Color 4: Sage Lichen -->
+        <div onclick="copyColor('7B8C77', 'Sage Lichen')" class="group cursor-pointer bg-[#1B1E1C] p-5 rounded-xl border border-[#2D332E] hover:border-[#BC7152] transition">
+          <div class="h-36 rounded-lg mb-4 shadow-inner border border-[#5B6958]" style="background-color: #7B8C77;"></div>
+          <span class="text-[10px] font-technical text-[#BC7152] block uppercase">BOTANICAL TONE</span>
+          <h4 class="font-editorial text-xl text-[#FAF8F5] my-1">Sage Lichen</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#2A2E2C]">
+            <p>HEX: <span class="text-[#FAF8F5]">#7B8C77</span></p>
+            <p>RGB: 123, 140, 119</p>
+            <p>PMS: 5635 C</p>
+            <p>CMYK: 40, 20, 42, 12</p>
+          </div>
+        </div>
+
+        <!-- Color 5: Raw Travertine -->
+        <div onclick="copyColor('E2DDD3', 'Raw Travertine')" class="group cursor-pointer bg-[#1B1E1C] p-5 rounded-xl border border-[#2D332E] hover:border-[#BC7152] transition">
+          <div class="h-36 rounded-lg mb-4 shadow-inner border border-[#C5BFB3]" style="background-color: #E2DDD3;"></div>
+          <span class="text-[10px] font-technical text-[#BC7152] block uppercase">MATERIAL NEUTRAL</span>
+          <h4 class="font-editorial text-xl text-[#FAF8F5] my-1">Raw Travertine</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#2A2E2C]">
+            <p>HEX: <span class="text-[#FAF8F5]">#E2DDD3</span></p>
+            <p>RGB: 226, 221, 211</p>
+            <p>PMS: Warm Gray 1 C</p>
+            <p>CMYK: 6, 6, 12, 4</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Toast Feedback -->
+      <div id="copyToast" class="fixed bottom-6 right-6 bg-[#FAF8F5] text-[#121413] px-4 py-2.5 rounded-lg shadow-xl text-xs font-technical uppercase tracking-wider hidden transition-all duration-300 z-50">
+        Copied to clipboard!
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: TYPOGRAPHY HIERARCHY -->
+  <section class="py-24 px-6 md:px-16 border-b border-[#262A27] bg-[#121413]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#262A27]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">04 / TYPOGRAPHIC SPECIMEN</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF8F5]">The Editorial &amp; Clinical Dual Hierarchy</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">PAIRING RATIONALE // POETIC SERIF + SWISS GROTESQUE</p>
+      </div>
+
+      <div class="space-y-12">
+        
+        <!-- Hierarchy Tier 1: Editorial Headline -->
+        <div class="p-8 bg-[#181B19] rounded-xl border border-[#2D332E]">
+          <div class="flex items-center justify-between border-b border-[#2D332E] pb-3 mb-6">
+            <span class="text-xs font-technical text-[#BC7152]">PRIMARY DISPLAY / CORMORANT GARAMOND REGULAR &amp; ITALIC</span>
+            <span class="text-xs font-technical text-[#8A8F8A]">SCALE: 64PX // TRACKING: -0.02EM</span>
+          </div>
+          <h3 class="font-editorial text-5xl md:text-7xl text-[#FAF8F5] leading-tight">
+            Restorative cellular care inspired by alpine ecosystems.
+          </h3>
+          <p class="font-editorial italic text-2xl text-[#8E948C] mt-4">
+            "We formulate with biological affinity, allowing natural dermal processes to self-regulate without synthetic disruption."
+          </p>
+        </div>
+
+        <!-- Hierarchy Tier 2: Product Name & Section Title -->
+        <div class="p-8 bg-[#181B19] rounded-xl border border-[#2D332E]">
+          <div class="flex items-center justify-between border-b border-[#2D332E] pb-3 mb-6">
+            <span class="text-xs font-technical text-[#BC7152]">SECONDARY HEADING / PLUS JAKARTA SANS SEMIBOLD</span>
+            <span class="text-xs font-technical text-[#8A8F8A]">SCALE: 20PX // TRACKING: +0.08EM</span>
+          </div>
+          <h4 class="font-sans-clean text-2xl md:text-3xl font-semibold uppercase tracking-wider text-[#FAF8F5]">
+            01 / CELLULAR BARRIER RESTORATION COMPLEX
+          </h4>
+          <p class="text-sm font-sans-clean text-[#9FA49E] mt-3 max-w-3xl leading-relaxed">
+            Engineered with biomimetic ceramides and sub-polar ectoin to reinforce intercellular lipids. Absorbs instantaneously without occlusion or sticky surface film.
+          </p>
+        </div>
+
+        <!-- Hierarchy Tier 3: Technical & Regulatory -->
+        <div class="p-8 bg-[#181B19] rounded-xl border border-[#2D332E]">
+          <div class="flex items-center justify-between border-b border-[#2D332E] pb-3 mb-6">
+            <span class="text-xs font-technical text-[#BC7152]">TECHNICAL DATA / SPACE MONO REGULAR</span>
+            <span class="text-xs font-technical text-[#8A8F8A]">SCALE: 11PX // TRACKING: +0.05EM // TABULAR NUMERALS</span>
+          </div>
+          <div class="font-technical text-xs text-[#9DA29C] space-y-2">
+            <p><span class="text-[#BC7152]">INCI INGREDIENTS:</span> AQUA (WATER), GLYCERIN, SQUALANE (BOTANICAL), ECTOIN, CENTELLA ASIATICA FERMENT LYSATE, CERAMIDE NP, CERAMIDE AP, SODIUM HYALURONATE, PHYTOSPHINGOSINE, CHOLESTEROL, TOCOPHEROL.</p>
+            <p><span class="text-[#BC7152]">SPECIFICATIONS:</span> PH 5.2 - 5.5 // PAO 12M // DERMATOLOGICALLY TESTED // CLINICALLY FORMULATED IN SWEDEN // NET WT 30 ML / 1.0 FL. OZ.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 5: PACKAGING SYSTEM CASE STUDY -->
+  <section id="packaging" class="py-24 px-6 md:px-16 border-b border-[#262A27] bg-[#141615]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#262A27]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">05 / STRUCTURAL PACKAGING</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF8F5]">Product Lineup &amp; Carton Architecture</h2>
+        </div>
+        <div class="flex items-center gap-2 mt-4 md:mt-0">
+          <button onclick="switchProduct('serum')" id="btn-serum" class="tab-btn active px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3C423D] transition">Serum</button>
+          <button onclick="switchProduct('cream')" id="btn-cream" class="tab-btn px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3C423D] text-[#9EA39B] transition">Cream Jar</button>
+          <button onclick="switchProduct('balm')" id="btn-balm" class="tab-btn px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3C423D] text-[#9EA39B] transition">Aluminum Tube</button>
+          <button onclick="switchProduct('box')" id="btn-box" class="tab-btn px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3C423D] text-[#9EA39B] transition">Rigid Box</button>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE PACKAGING SHOWCASE -->
+      <div class="bg-[#181B19] rounded-2xl border border-[#2D332E] p-8 md:p-14 overflow-hidden">
+        
+        <!-- View 1: Serum -->
+        <div id="view-serum" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 flex justify-center py-8 bg-[#121413] rounded-xl border border-[#262A27] relative">
+            <div class="absolute top-4 left-4 text-[10px] font-technical text-[#8A8F8A]">FRONT FACING ELEVATION</div>
+            <div class="product-shadow scale-110 py-6">
+              <!-- Serum SVG -->
+              <svg width="170" height="360" viewBox="0 0 150 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="75" cy="330" rx="60" ry="10" fill="#000000" fill-opacity="0.35"/>
+                <path d="M60 12C60 5.37258 65.3726 0 72 0H78C84.6274 0 90 5.37258 90 12V32H60V12Z" fill="#1C1E1B"/>
+                <rect x="54" y="32" width="42" height="26" rx="2" fill="url(#silverCollar)"/>
+                <line x1="54" y1="45" x2="96" y2="45" stroke="#99978E" stroke-width="0.8"/>
+                <rect x="50" y="58" width="50" height="8" rx="1" fill="#1C1E1B"/>
+                <rect x="25" y="66" width="100" height="260" rx="14" fill="url(#frostedAmber)"/>
+                <rect x="28" y="90" width="94" height="232" rx="10" fill="url(#serumLiquid)" fill-opacity="0.75"/>
+                <rect x="25" y="115" width="100" height="155" fill="#F8F6F0"/>
+                <rect x="25" y="115" width="10" height="155" fill="black" fill-opacity="0.08"/>
+                <rect x="115" y="115" width="10" height="155" fill="black" fill-opacity="0.08"/>
+                <text x="75" y="142" font-family="'Cormorant Garamond', serif" font-size="15" font-weight="600" letter-spacing="4" fill="#1C1E1B" text-anchor="middle">É P U R A</text>
+                <text x="75" y="156" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1.5" fill="#757770" text-anchor="middle">FORMULARY 01</text>
+                <line x1="45" y1="164" x2="105" y2="164" stroke="#BC7152" stroke-width="0.7"/>
+                <text x="75" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#1C1E1B" text-anchor="middle">CELLULAR RECOVERY</text>
+                <text x="75" y="190" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-style="italic" fill="#50524C" text-anchor="middle">Biomimetic Lipid Serum</text>
+                <text x="75" y="214" font-family="'Space Mono', monospace" font-size="4.5" fill="#6A6C65" text-anchor="middle">0.8% ECTOIN • 5% CENTELLA</text>
+                <text x="75" y="224" font-family="'Space Mono', monospace" font-size="4.5" fill="#6A6C65" text-anchor="middle">CERAMIDE COMPLEX NP/AP</text>
+                <rect x="68" y="235" width="14" height="14" rx="7" stroke="#1C1E1B" stroke-width="0.6"/>
+                <text x="75" y="244" font-family="'Cormorant Garamond', serif" font-size="7" font-weight="600" fill="#1C1E1B" text-anchor="middle">É</text>
+                <text x="75" y="260" font-family="'Space Mono', monospace" font-size="4" letter-spacing="0.5" fill="#888B83" text-anchor="middle">30 ML / 1.0 FL. OZ.</text>
+                <path d="M30 72C30 72 35 150 35 320" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.25"/>
+              </svg>
+            </div>
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#BC7152]">PRODUCT SPECIFICATION // SKU EP-01</span>
+            <h3 class="font-editorial text-4xl text-[#FAF8F5]">Cellular Recovery Serum (30ml)</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Housed in pharmaceutical-grade heavy borosilicate amber glass to protect light-sensitive phyto-actives from photo-degradation. Wrapped in uncoated tactile label stock with water-resistant soy seal coating.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#2D332E]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">CONTAINER</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Frosted Amber Glass Flacon</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">CLOSURE</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Matte Basalt Pipette Dropper</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">LABEL FINISH</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Cotton Paper + Blind Deboss Monogram</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">VOLUME</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">30ml / 1.0 Fl. Oz. (3-Month Supply)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View 2: Cream Jar -->
+        <div id="view-cream" class="hidden grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 flex justify-center py-8 bg-[#121413] rounded-xl border border-[#262A27] relative">
+            <div class="absolute top-4 left-4 text-[10px] font-technical text-[#8A8F8A]">CERAMIC JAR ELEVATION</div>
+            <div class="product-shadow scale-110 py-6">
+              <!-- Cream SVG -->
+              <svg width="220" height="240" viewBox="0 0 200 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="100" cy="222" rx="85" ry="12" fill="#000000" fill-opacity="0.4"/>
+                <path d="M22 36C22 28 28 22 36 22H164C172 22 178 28 178 36V62H22V36Z" fill="#181B18"/>
+                <ellipse cx="100" cy="24" rx="76" ry="6" fill="#242824"/>
+                <ellipse cx="100" cy="38" rx="20" ry="4" stroke="#363C37" stroke-width="0.8"/>
+                <text x="100" y="40" font-family="'Cormorant Garamond', serif" font-size="9" fill="#586059" text-anchor="middle">ÉPURA</text>
+                <rect x="18" y="62" width="164" height="152" rx="14" fill="url(#alabasterCeramic)"/>
+                <rect x="18" y="62" width="14" height="152" fill="black" fill-opacity="0.06"/>
+                <rect x="168" y="62" width="14" height="152" fill="black" fill-opacity="0.06"/>
+                <text x="100" y="98" font-family="'Cormorant Garamond', serif" font-size="18" font-weight="600" letter-spacing="4" fill="#1C1E1B" text-anchor="middle">É P U R A</text>
+                <text x="100" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" letter-spacing="2" fill="#80827B" text-anchor="middle">CLINICAL BOTANY</text>
+                <line x1="60" y1="122" x2="140" y2="122" stroke="#1C1E1B" stroke-width="0.6"/>
+                <text x="100" y="138" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#1C1E1B" text-anchor="middle">BARRIER RESTORE CREAM</text>
+                <text x="100" y="150" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-style="italic" fill="#565851" text-anchor="middle">Rich Biomimetic Emulsion</text>
+                <text x="100" y="172" font-family="'Space Mono', monospace" font-size="5" fill="#72756E" text-anchor="middle">PHYTO-SQUALANE • 3% NIACINAMIDE</text>
+                <text x="100" y="182" font-family="'Space Mono', monospace" font-size="5" fill="#72756E" text-anchor="middle">NET WT. 50 ML / 1.7 FL. OZ. e</text>
+                <path d="M26 66C26 66 32 120 32 206" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.35"/>
+              </svg>
+            </div>
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#BC7152]">PRODUCT SPECIFICATION // SKU EP-02</span>
+            <h3 class="font-editorial text-4xl text-[#FAF8F5]">Biomimetic Barrier Cream (50ml)</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              A solid, high-density alabaster ceramic vessel designed to be infinitely refillable. The heavy weighted base conveys permanency and quiet luxury, paired with an ergonomic matte polymer screw cap with blind-debossed monogram.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#2D332E]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">VESSEL</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Alabaster Matte Glazed Ceramic</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">LID</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Recessed Threaded Cap (Basalt Finish)</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRINTING</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Direct Ceramic High-Precision Screen Print</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">WEIGHT</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">210g Empty Vessel (Substantial Tactility)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View 3: Aluminum Tube -->
+        <div id="view-balm" class="hidden grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 flex justify-center py-8 bg-[#121413] rounded-xl border border-[#262A27] relative">
+            <div class="absolute top-4 left-4 text-[10px] font-technical text-[#8A8F8A]">EXTRUDED TUBE ELEVATION</div>
+            <div class="product-shadow scale-110 py-6">
+              <!-- Tube SVG -->
+              <svg width="150" height="340" viewBox="0 0 130 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="65" cy="312" rx="45" ry="8" fill="#000000" fill-opacity="0.35"/>
+                <polygon points="50,290 80,290 85,306 45,306" fill="#1C1E1B"/>
+                <rect x="44" y="306" width="42" height="6" rx="1" fill="#2E322D"/>
+                <path d="M20 20H110V22C110 22 104 200 90 286H40C26 200 20 22 20 22V20Z" fill="url(#rawAluminum)"/>
+                <rect x="18" y="10" width="94" height="12" fill="#BEBCB4"/>
+                <line x1="18" y1="14" x2="112" y2="14" stroke="#94928A" stroke-width="0.8"/>
+                <line x1="18" y1="18" x2="112" y2="18" stroke="#94928A" stroke-width="0.8"/>
+                <text x="65" y="19" font-family="'Space Mono', monospace" font-size="4" fill="#5A5954" text-anchor="middle">LOT: EP-8891 // EXP 2028</text>
+                <text x="65" y="70" font-family="'Cormorant Garamond', serif" font-size="14" font-weight="600" letter-spacing="3" fill="#181B18" text-anchor="middle">É P U R A</text>
+                <text x="65" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1.2" fill="#505450" text-anchor="middle">LIPID BALM</text>
+                <text x="65" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="600" fill="#181B18" text-anchor="middle">INTENSE REPAIR</text>
+                <text x="65" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" fill="#505450" text-anchor="middle">For Dry &amp; Compromised Skin</text>
+                <rect x="58" y="140" width="14" height="2" fill="#BC7152"/>
+                <text x="65" y="165" font-family="'Space Mono', monospace" font-size="4" fill="#5E635E" text-anchor="middle">CENTELLA BIO-FERMENT</text>
+                <text x="65" y="174" font-family="'Space Mono', monospace" font-size="4" fill="#5E635E" text-anchor="middle">ORGANIC SHEA ESTERS</text>
+                <text x="65" y="240" font-family="'Space Mono', monospace" font-size="4.5" fill="#5E635E" text-anchor="middle">40 ML / 1.35 FL. OZ.</text>
+                <path d="M30 25C30 25 36 150 48 280" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.3"/>
+              </svg>
+            </div>
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#BC7152]">PRODUCT SPECIFICATION // SKU EP-03</span>
+            <h3 class="font-editorial text-4xl text-[#FAF8F5]">Lipid Renewal Balm (40ml)</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Industrial, raw, and functional. Inspired by vintage European apothecary ointments, the extruded 100% recyclable aluminum tube crinkles gracefully over time, chronicling the user's personal ritual with every squeeze.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#2D332E]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">MATERIAL</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Pure Impact-Extruded Aluminum</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">CRIMP SEAL</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Embossed Production Lot &amp; Expiry Stamp</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">CAP DESIGN</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Octagonal Precision Apothecary Key Screw</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">RECYCLABILITY</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Infinitely Recyclable Without Quality Loss</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View 4: Rigid Box Carton -->
+        <div id="view-box" class="hidden grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 flex justify-center py-8 bg-[#121413] rounded-xl border border-[#262A27] relative">
+            <div class="absolute top-4 left-4 text-[10px] font-technical text-[#8A8F8A]">OUTER PACKAGING DIE-CUT</div>
+            
+            <!-- Box Mockup Graphic -->
+            <div class="paper-texture text-[#1A1D1A] p-10 rounded-xl shadow-2xl border border-[#D5D0C2] w-64 h-96 flex flex-col justify-between relative">
+              <div class="border-b border-[#1A1D1A]/20 pb-4">
+                <span class="text-[9px] font-technical text-[#BC7152] block">FORMULARY 01 // FSC CERTIFIED</span>
+                <h4 class="font-editorial text-3xl font-semibold tracking-widest text-[#1A1D1A] mt-2">ÉPURA</h4>
+                <p class="text-[8px] font-sans-clean uppercase tracking-wider text-[#686D66]">LABORATOIRE DERMATOLOGIQUE</p>
+              </div>
+
+              <!-- Blind Deboss Monogram center -->
+              <div class="flex justify-center my-auto">
+                <div class="w-16 h-16 rounded-full border border-[#1A1D1A]/30 flex items-center justify-center deboss-effect bg-[#F5F2EA]">
+                  <span class="font-editorial text-3xl text-[#1A1D1A]/60">É</span>
+                </div>
+              </div>
+
+              <div class="border-t border-[#1A1D1A]/20 pt-4 text-[9px] font-technical text-[#595E57] space-y-1">
+                <p class="font-semibold text-[#1A1D1A]">CELLULAR RECOVERY SERUM</p>
+                <p>NET 30 ML / 1.0 FL. OZ.</p>
+                <p class="text-[8px] text-[#7F857D] pt-1">PARIS • STOCKHOLM • LONDON</p>
+              </div>
+
+              <!-- Tamper Evident Label Tab -->
+              <div class="absolute -top-3 right-6 bg-[#1A1D1A] text-white text-[8px] font-technical px-2 py-1 rounded shadow">
+                SEALED BY ATELIER
+              </div>
+            </div>
+
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#BC7152]">SECONDARY PACKAGING // CARTON SYSTEM</span>
+            <h3 class="font-editorial text-4xl text-[#FAF8F5]">G.F Smith Uncoated Rigid Board</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Printed on custom-milled 380gsm Colorplan Alabaster board with zero plastic laminates. Finished with a blind deep deboss on the brand seal, matte mineral inks, and an unbleached cotton tamper-evident tear seal.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#2D332E]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PAPER SUBSTRATE</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">380gsm G.F Smith Colorplan Alabaster</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRINTING PROCESS</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Pantone Offset + Blind Letterpress Deboss</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">INNER TRAY</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Molded Sugarcane Bagasse Pulp Insert</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">ADHESIVE</span>
+                <p class="text-xs font-semibold text-[#FAF8F5]">Water-Soluble Biodegradable Starch Glue</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 6: STATIONERY & BUSINESS CARDS -->
+  <section id="stationery" class="py-24 px-6 md:px-16 border-b border-[#262A27] bg-[#121413]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#262A27]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">06 / PHYSICAL TOUCHPOINTS</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF8F5]">Duplexed Stationery &amp; Atelier Ephemera</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">600GSM COTTON STOCK // HAND-BEVELED EDGES</p>
+      </div>
+
+      <!-- BUSINESS CARDS ISOMETRIC SPREAD -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        
+        <!-- CARD FRONT -->
+        <div class="paper-texture text-[#1A1D1A] p-10 md:p-14 rounded-2xl shadow-2xl border border-[#DCD7CA] min-h-[300px] flex flex-col justify-between transform hover:-translate-y-1 transition duration-300">
+          <div class="flex justify-between items-start">
+            <span class="text-[9px] font-technical tracking-widest text-[#72776E]">01 / IDENTITY CARD</span>
+            <div class="w-7 h-7 rounded-full border border-[#1A1D1A]/30 flex items-center justify-center">
+              <span class="font-editorial text-sm font-semibold">É</span>
+            </div>
+          </div>
+
+          <div class="my-auto py-6">
+            <h3 class="font-editorial text-4xl tracking-[0.2em] font-medium text-[#1A1D1A]">É P U R A</h3>
+            <p class="font-sans-clean text-[9px] tracking-[0.3em] uppercase text-[#6C7169] mt-2">FORMULARY &amp; BIOLOGICAL RESEARCH</p>
+          </div>
+
+          <div class="flex justify-between items-end border-t border-[#1A1D1A]/15 pt-4 text-[9px] font-technical text-[#767C73]">
+            <span>STOCKHOLM • PARIS</span>
+            <span>WWW.EPURA-FORMULARY.COM</span>
+          </div>
+        </div>
+
+        <!-- CARD BACK (SWISS EDITORIAL LAYOUT) -->
+        <div class="bg-[#1C1E1B] text-[#FAF8F5] p-10 md:p-14 rounded-2xl shadow-2xl border border-[#2E332E] min-h-[300px] flex flex-col justify-between transform hover:-translate-y-1 transition duration-300">
+          <div class="flex justify-between items-start">
+            <div>
+              <p class="font-editorial text-xl text-[#FAF8F5]">Dr. Astrid Lindström</p>
+              <p class="text-[9px] font-technical text-[#BC7152] uppercase tracking-wider mt-0.5">HEAD OF BIO-CELLULAR FORMULATION</p>
+            </div>
+            <span class="text-[9px] font-technical text-[#6E736B]">CARD 04/200</span>
+          </div>
+
+          <div class="my-auto py-4 text-xs font-sans-clean text-[#B4B8AF] space-y-1.5">
+            <p><span class="text-[#72776E] text-[10px] font-technical uppercase mr-2">ATELIER:</span> 42 Rue de Turenne, 75003 Paris</p>
+            <p><span class="text-[#72776E] text-[10px] font-technical uppercase mr-2">DIRECT:</span> +33 (0)1 42 78 90 22</p>
+            <p><span class="text-[#72776E] text-[10px] font-technical uppercase mr-2">INQUIRY:</span> a.lindstrom@epura-formulary.com</p>
+          </div>
+
+          <div class="flex justify-between items-end border-t border-[#2F342F] pt-4 text-[9px] font-technical text-[#7E857C]">
+            <span>600GSM DUPLEX COTTON</span>
+            <span class="text-[#BC7152]">BLIND DEBOSS FINISH</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 7: INSTAGRAM & DIGITAL BRAND ASSETS -->
+  <section id="digital" class="py-24 px-6 md:px-16 border-b border-[#262A27] bg-[#141615]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#262A27]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">07 / SOCIAL &amp; DIGITAL PRESENCE</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF8F5]">Curated Editorial Instagram Grid</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">@EPURA.FORMULARY // 9-POST ARCHITECTURAL MATRIX</p>
+      </div>
+
+      <!-- INSTAGRAM 3x3 GRID -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        
+        <!-- Post 1: Macro Texture Emulsion -->
+        <div class="aspect-square bg-[#1E221F] rounded-xl border border-[#2D332E] p-6 flex flex-col justify-between overflow-hidden relative group">
+          <div class="absolute inset-0 bg-gradient-to-tr from-[#161816] to-[#2B302C] opacity-80"></div>
+          <div class="relative z-10 flex justify-between text-[10px] font-technical text-[#BC7152]">
+            <span>01 // MACRO</span>
+            <span>TEXTURE</span>
+          </div>
+          <div class="relative z-10 my-auto text-center">
+            <div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-[#E2DDD3]/40 to-[#BC7152]/30 blur-sm flex items-center justify-center">
+              <span class="text-[9px] font-technical text-[#FAF8F5]">LIPID EMULSION</span>
+            </div>
+          </div>
+          <p class="relative z-10 text-[10px] font-sans-clean text-[#9FA49E]">0.8% Ectoin suspension at 400x cellular magnification.</p>
+        </div>
+
+        <!-- Post 2: Typographic Manifesto Post -->
+        <div class="aspect-square paper-texture text-[#1A1D1A] rounded-xl border border-[#D5D0C3] p-8 flex flex-col justify-between group">
+          <div class="text-[9px] font-technical text-[#7C8278]">ÉPURA JOURNAL</div>
+          <div class="my-auto">
+            <p class="font-editorial text-2xl md:text-3xl text-[#1A1D1A] leading-snug">
+              "True formulation begins by removing what is non-essential."
+            </p>
+          </div>
+          <div class="text-[9px] font-technical text-[#7C8278]">ENTRY NO. 018 — PARIS</div>
+        </div>
+
+        <!-- Post 3: Product Silhouette on Stone Plinth -->
+        <div class="aspect-square bg-[#181B19] rounded-xl border border-[#2D332E] p-6 flex flex-col justify-between overflow-hidden relative">
+          <div class="absolute inset-0 flex items-center justify-center opacity-30">
+            <div class="w-32 h-44 bg-[#BC7152]/20 rounded-t-full blur-xl"></div>
+          </div>
+          <div class="relative z-10 flex justify-between text-[10px] font-technical text-[#8A8F8A]">
+            <span>03 // MONOLITH</span>
+            <span>SERUM 30ML</span>
+          </div>
+          <div class="relative z-10 my-auto flex justify-center">
+            <span class="font-editorial text-5xl font-light text-[#FAF8F5] tracking-widest">É</span>
+          </div>
+          <p class="relative z-10 text-[10px] font-sans-clean text-[#9FA49E]">Captured in natural morning raking light.</p>
+        </div>
+
+        <!-- Post 4: Botanical Scientific Analysis -->
+        <div class="aspect-square bg-[#1B1E1C] rounded-xl border border-[#2D332E] p-6 flex flex-col justify-between">
+          <div class="flex justify-between text-[10px] font-technical text-[#BC7152]">
+            <span>04 // BIO-ACTIVE</span>
+            <span>CENTELLA</span>
+          </div>
+          <div class="my-auto space-y-2">
+            <span class="text-xs font-technical text-[#7B8C77] block">94.2% BIOMARKER RECOVERY</span>
+            <h4 class="font-editorial text-2xl text-[#FAF8F5]">Phyto-Ferment Study</h4>
+            <div class="w-full bg-[#272B28] h-1.5 rounded-full overflow-hidden">
+              <div class="bg-[#7B8C77] h-full w-[94%]"></div>
+            </div>
+          </div>
+          <p class="text-[10px] font-technical text-[#7C8278]">CLINICAL IN VITRO TRIAL 2026</p>
+        </div>
+
+        <!-- Post 5: Packaging Detail (Aluminum Crimp Close-up) -->
+        <div class="aspect-square bg-gradient-to-br from-[#2E3330] to-[#161817] rounded-xl border border-[#3E4540] p-6 flex flex-col justify-between">
+          <div class="flex justify-between text-[10px] font-technical text-[#9AA096]">
+            <span>05 // MATERIAL</span>
+            <span>ALUMINUM</span>
+          </div>
+          <div class="my-auto text-center">
+            <span class="font-technical text-xl tracking-widest text-[#E8E5DD] block">EP-8891</span>
+            <span class="text-[9px] font-technical text-[#9AA096] uppercase mt-1 block">HAND-CRIMPED HERMETIC CLOSURE</span>
+          </div>
+          <p class="text-[10px] font-sans-clean text-[#9FA49E]">100% Recycled Metal Substrate.</p>
+        </div>
+
+        <!-- Post 6: Atelier Space & Architecture -->
+        <div class="aspect-square bg-[#181B19] rounded-xl border border-[#2D332E] p-6 flex flex-col justify-between">
+          <div class="flex justify-between text-[10px] font-technical text-[#8A8F8A]">
+            <span>06 // ATELIER</span>
+            <span>PARIS 03</span>
+          </div>
+          <div class="my-auto">
+            <h4 class="font-editorial text-2xl text-[#FAF8F5] leading-snug">The Formulation Laboratory</h4>
+            <p class="text-xs text-[#8E948C] mt-2">Limestone counters, brushed aluminum shelving, and diffused northern light.</p>
+          </div>
+          <p class="text-[10px] font-technical text-[#7C8278]">RUE DE TURENNE</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 8: DELIVERABLES & CREDITS FOOTER -->
+  <footer class="py-20 px-6 md:px-16 bg-[#0E100F] border-t border-[#262A27]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-[#262A27]">
+        <div class="md:col-span-4">
+          <h3 class="font-editorial text-4xl text-[#FAF8F5] tracking-wider mb-2">É P U R A</h3>
+          <p class="text-xs font-technical uppercase tracking-widest text-[#BC7152] mb-4">BRAND IDENTITY CASE STUDY</p>
+          <p class="text-xs text-[#8A8F8A] leading-relaxed max-w-sm">
+            A comprehensive brand creation project spanning strategy, naming, visual identity, structural packaging design, technical label typography, and editorial art direction.
+          </p>
+        </div>
+
+        <div class="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-8 text-xs font-sans-clean">
+          <div>
+            <span class="block font-technical uppercase text-[#BC7152] mb-3">DELIVERABLES</span>
+            <ul class="space-y-1.5 text-[#9FA49E]">
+              <li>Brand Strategy &amp; Naming</li>
+              <li>Logotype &amp; Monogram</li>
+              <li>Brand Guidelines (84pp)</li>
+              <li>Color &amp; Type System</li>
+              <li>Structural 3D Mockups</li>
+            </ul>
+          </div>
+          <div>
+            <span class="block font-technical uppercase text-[#BC7152] mb-3">PACKAGING</span>
+            <ul class="space-y-1.5 text-[#9FA49E]">
+              <li>Dropper Serum Bottle</li>
+              <li>Ceramic Refillable Jar</li>
+              <li>Extruded Aluminum Tube</li>
+              <li>G.F Smith Outer Boxes</li>
+              <li>Tamper Security Seals</li>
+            </ul>
+          </div>
+          <div>
+            <span class="block font-technical uppercase text-[#BC7152] mb-3">CREDITS</span>
+            <ul class="space-y-1.5 text-[#9FA49E]">
+              <li>Lead Design: Studio Mørk</li>
+              <li>Creative Direction: E. Vance</li>
+              <li>3D Visuals: Atelier Render</li>
+              <li>Client: Épura Laboratories</li>
+              <li>Published: October 2026</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-technical text-[#7C8278]">
+        <p>© 2026 ÉPURA FORMULARY. ALL RIGHTS RESERVED. FICTIONAL CASE STUDY PORTFOLIO.</p>
+        <p class="mt-4 sm:mt-0">DESIGNED WITH RESTRICTED TYPOGRAPHIC DISCIPLINE</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT FOR INTERACTION (TAB SWITCHING & COPY TO CLIPBOARD) -->
+  <script>
+    function copyColor(hex, name) {
+      navigator.clipboard.writeText('#' + hex).then(() => {
+        const toast = document.getElementById('copyToast');
+        toast.innerText = 'COPIED ' + name.toUpperCase() + ' (#' + hex + ')';
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 2200);
+      });
+    }
+
+    function switchProduct(prod) {
+      const views = ['serum', 'cream', 'balm', 'box'];
+      views.forEach(v => {
+        const el = document.getElementById('view-' + v);
+        const btn = document.getElementById('btn-' + v);
+        if (v === prod) {
+          el.classList.remove('hidden');
+          el.classList.add('grid');
+          btn.classList.add('active', 'text-[#FAF8F5]', 'bg-[#1A1D1A]');
+          btn.classList.remove('text-[#9EA39B]');
+        } else {
+          el.classList.add('hidden');
+          el.classList.remove('grid');
+          btn.classList.remove('active', 'text-[#FAF8F5]', 'bg-[#1A1D1A]');
+          btn.classList.add('text-[#9EA39B]');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

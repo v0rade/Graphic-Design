@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MORA COFFEE ROASTERS — Specialty Packaging Design & Brand Case Study</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --serif: 'Didot', 'Bodoni MT', 'Cinzel', 'Playfair Display', Georgia, serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      --mono: 'SF Mono', Consolas, 'Courier New', monospace;
+    }
+
+    .font-editorial { font-family: var(--serif); }
+    .font-sans-clean { font-family: var(--sans); }
+    .font-technical { font-family: var(--mono); }
+
+    /* Tactile Paper & Kraft Substrate Texture */
+    .kraft-texture {
+      background-color: #E7E1D4;
+      background-image: 
+        radial-gradient(#cfc7b7 0.75px, transparent 0.75px),
+        radial-gradient(#cfc7b7 0.75px, #E7E1D4 0.75px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+    }
+
+    .label-cotton {
+      background-color: #FAF8F5;
+      background-image: radial-gradient(#dfd9cd 0.6px, transparent 0.6px);
+      background-size: 8px 8px;
+    }
+
+    /* Natural Studio Lighting Shadows */
+    .studio-shadow {
+      filter: drop-shadow(0 20px 25px rgba(28, 25, 23, 0.15)) drop-shadow(0 35px 50px rgba(28, 25, 23, 0.08));
+    }
+
+    .bag-crease {
+      box-shadow: inset 1px 0 2px rgba(0, 0, 0, 0.08), inset -1px 0 2px rgba(255, 255, 255, 0.4);
+    }
+
+    .tab-btn.active {
+      background-color: #1E201E;
+      color: #FAF7F2;
+      border-color: #1E201E;
+    }
+  </style>
+</head>
+<body class="bg-[#121412] text-[#E6E3DB] font-sans-clean antialiased selection:bg-[#C26343] selection:text-white">
+
+  <!-- TOP EDITORIAL HEADER -->
+  <header class="border-b border-[#272B28] bg-[#121412]/90 backdrop-blur sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <span class="text-xs tracking-[0.25em] uppercase font-technical text-[#8A8F8A]">CASE STUDY // 2026</span>
+        <span class="text-[#383E39]">•</span>
+        <span class="text-xs tracking-wider uppercase font-sans-clean text-[#D2CEBF]">SPECIALTY PACKAGING DESIGN</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#overview" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Brief</a>
+        <a href="#lineup" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">The 3 Variants</a>
+        <a href="#label-system" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Label Architecture</a>
+        <a href="#palette" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Colors</a>
+        <a href="#production" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Materials</a>
+        <span class="px-2.5 py-1 text-[11px] font-technical uppercase border border-[#C26343]/50 text-[#C26343] rounded-full">SCA 89+ Micro-Lot</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: THE STUDIO SCENE -->
+  <section class="relative min-h-[90vh] flex flex-col justify-between p-8 md:p-16 border-b border-[#272B28] bg-gradient-to-b from-[#161916] via-[#121412] to-[#0E100E] overflow-hidden">
+    <!-- Ambient subtle studio warmth -->
+    <div class="absolute -top-32 right-10 w-[550px] h-[550px] bg-[#C26343]/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-[500px] h-[500px] bg-[#7D8B7A]/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto w-full z-10 pt-4">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#272B28] pb-8 mb-10">
+        <div>
+          <p class="text-xs font-technical text-[#C26343] uppercase tracking-[0.3em] mb-3">CLIENT: MORA COFFEE ROASTERS (COPENHAGEN &amp; OAXACA)</p>
+          <h1 class="font-editorial text-6xl md:text-8xl lg:text-9xl tracking-tight text-[#FAF7F2] leading-[0.9]">
+            M O R A
+          </h1>
+          <p class="font-editorial italic text-2xl md:text-3xl text-[#9E9B93] mt-2 font-light">
+            Origin-Focused Micro-Lot Specialty Coffee Packaging System
+          </p>
+        </div>
+        <div class="mt-8 lg:mt-0 text-left lg:text-right max-w-sm">
+          <span class="text-[10px] font-technical uppercase tracking-widest text-[#8A8F8A] block mb-1">DISCIPLINE</span>
+          <p class="text-sm text-[#DED9CD]">Structural Pouch Architecture, FSC Cotton Tipped Labels &amp; Sensory Art Direction</p>
+        </div>
+      </div>
+
+      <!-- MAIN HERO STUDIO SHOWCASE: 3 BAGS ARRANGED ON A WARM PLASTER PLINTH -->
+      <div class="relative w-full h-[500px] md:h-[600px] bg-[#191D1A] rounded-2xl border border-[#2D3530] overflow-hidden flex items-center justify-center shadow-2xl">
+        <!-- Natural Studio Plinth & Raking Daylight Simulation -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px); background-size: 60px 60px;"></div>
+        
+        <!-- Studio Travertine Plinth Surface (Floor) -->
+        <div class="absolute bottom-0 w-full h-36 bg-gradient-to-t from-[#0E100E] via-[#141815] to-transparent border-t border-[#29302B]/60"></div>
+        
+        <!-- Directional Soft Window Light (Raking from upper left) -->
+        <div class="absolute -top-40 -left-20 w-[600px] h-[800px] bg-gradient-to-br from-white/10 via-transparent to-transparent transform -rotate-45 pointer-events-none"></div>
+
+        <!-- 3 BAGS VECTOR COMPOSITION -->
+        <div class="relative z-10 flex items-end justify-center gap-4 sm:gap-8 md:gap-14 scale-90 sm:scale-100 md:scale-110 transition-transform duration-500 hover:scale-[1.12]">
+          
+          <!-- ==================== BAG 01: ETHIOPIA (WASHED / SAGE GREEN) ==================== -->
+          <div class="flex flex-col items-center group cursor-pointer">
+            <div class="relative studio-shadow">
+              <svg width="170" height="340" viewBox="0 0 170 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Drop shadow base -->
+                <ellipse cx="85" cy="332" rx="72" ry="10" fill="#000000" fill-opacity="0.45"/>
+                
+                <!-- Coffee Bag Top Heat-Sealed Crimp with Grip Ribs -->
+                <rect x="22" y="14" width="126" height="24" rx="2" fill="#D8D2C4"/>
+                <line x1="22" y1="18" x2="148" y2="18" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="22" x2="148" y2="22" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="26" x2="148" y2="26" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="30" x2="148" y2="30" stroke="#B8B2A4" stroke-width="0.8"/>
+                
+                <!-- Laser Tear Notches on Both Sides -->
+                <path d="M22 30L26 32L22 34Z" fill="#181B18"/>
+                <path d="M148 30L144 32L148 34Z" fill="#181B18"/>
+                
+                <!-- Main Kraft Paper Stand-up Pouch Body with Side Gusset Creases -->
+                <path d="M22 38L16 324C16 327 18 330 22 330H148C152 330 154 327 154 324L148 38H22Z" fill="url(#kraftPouchGradient)"/>
+                
+                <!-- Side Gusset Shadow Creases -->
+                <path d="M22 38L16 324L32 330L36 38H22Z" fill="#000000" fill-opacity="0.08"/>
+                <path d="M148 38L154 324L138 330L134 38H148Z" fill="#000000" fill-opacity="0.08"/>
+                
+                <!-- Pouch Center Vertical Fold Line (Subtle Realism) -->
+                <line x1="85" y1="38" x2="85" y2="330" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+                
+                <!-- One-Way Degassing Valve (Matte Circular Button) -->
+                <circle cx="85" cy="62" r="7.5" fill="#C9C3B4" stroke="#B3AD9F" stroke-width="1"/>
+                <!-- Pin-prick valve vents -->
+                <circle cx="83.5" cy="62" r="0.8" fill="#58544B"/>
+                <circle cx="86.5" cy="62" r="0.8" fill="#58544B"/>
+
+                <!-- Physical Tipped-In Label (FSC Cotton Paper with Subtle Drop Shadow) -->
+                <g filter="url(#labelShadow)">
+                  <rect x="28" y="85" width="114" height="205" rx="3" fill="#FAF8F5"/>
+                  
+                  <!-- Top Origin Color Block: Sage Green (#7D8B7A) -->
+                  <rect x="28" y="85" width="114" height="8" rx="3" fill="#7D8B7A"/>
+                  <rect x="28" y="90" width="114" height="3" fill="#7D8B7A"/>
+
+                  <!-- Label Content -->
+                  <text x="85" y="112" font-family="'Didot', 'Bodoni MT', serif" font-size="16" font-weight="600" letter-spacing="3" fill="#1C1E1B" text-anchor="middle">M O R A</text>
+                  <text x="85" y="123" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="2" fill="#767A72" text-anchor="middle">SPECIALTY COFFEE ROASTERS</text>
+                  
+                  <line x1="42" y1="131" x2="128" y2="131" stroke="#DCD7CD" stroke-width="0.8"/>
+                  
+                  <!-- Origin & Region -->
+                  <text x="85" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#1C1E1B" text-anchor="middle">ETHIOPIA</text>
+                  <text x="85" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" fill="#52574F" text-anchor="middle">YIRGACHEFFE • GEDEB</text>
+                  
+                  <!-- Process Pill Badge -->
+                  <rect x="52" y="168" width="66" height="11" rx="5.5" fill="#F0EDE6" stroke="#7D8B7A" stroke-width="0.8"/>
+                  <text x="85" y="176" font-family="'SF Mono', monospace" font-size="5" font-weight="700" fill="#434F41" text-anchor="middle">WASHED // HEIRLOOM</text>
+                  
+                  <!-- Tasting Notes Sensory Stack -->
+                  <text x="85" y="196" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Bergamot • Jasmine</text>
+                  <text x="85" y="206" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Candied Lemon • White Peach</text>
+                  
+                  <line x1="42" y1="216" x2="128" y2="216" stroke="#DCD7CD" stroke-width="0.8"/>
+                  
+                  <!-- Micro-Lot Specifications Table -->
+                  <text x="40" y="228" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">ALTITUDE:</text>
+                  <text x="130" y="228" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">2,100 MASL</text>
+                  
+                  <text x="40" y="238" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">PRODUCER:</text>
+                  <text x="130" y="238" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">WURKNA WASHING STN</text>
+                  
+                  <text x="40" y="248" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">SCA SCORE:</text>
+                  <text x="130" y="248" font-family="'SF Mono', monospace" font-size="4.5" font-weight="700" fill="#7D8B7A" text-anchor="end">89.25 PTS</text>
+                  
+                  <!-- Bottom Roast Date & Weight Lockup -->
+                  <rect x="36" y="258" width="98" height="20" rx="2" fill="#F4F0E8" stroke="#DFDACF" stroke-width="0.6"/>
+                  <text x="42" y="271" font-family="'SF Mono', monospace" font-size="4" fill="#6A6F66">ROASTED ON: 12.10.26</text>
+                  <text x="128" y="271" font-family="'SF Mono', monospace" font-size="4" font-weight="700" fill="#1C1E1B" text-anchor="end">250G / 8.8 OZ</text>
+                </g>
+              </svg>
+            </div>
+            <span class="mt-4 text-[11px] font-technical uppercase text-[#9FA49B] tracking-widest">Variant 01 / Ethiopia Washed</span>
+          </div>
+
+          <!-- ==================== BAG 02: COSTA RICA (ANAEROBIC / TERRACOTTA EMBER) ==================== -->
+          <div class="flex flex-col items-center group cursor-pointer mb-3">
+            <div class="relative studio-shadow">
+              <svg width="185" height="355" viewBox="0 0 170 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Drop shadow base -->
+                <ellipse cx="85" cy="332" rx="72" ry="10" fill="#000000" fill-opacity="0.5"/>
+                
+                <!-- Crimp top -->
+                <rect x="22" y="14" width="126" height="24" rx="2" fill="#D8D2C4"/>
+                <line x1="22" y1="18" x2="148" y2="18" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="22" x2="148" y2="22" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="26" x2="148" y2="26" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="30" x2="148" y2="30" stroke="#B8B2A4" stroke-width="0.8"/>
+                <path d="M22 30L26 32L22 34Z" fill="#181B18"/>
+                <path d="M148 30L144 32L148 34Z" fill="#181B18"/>
+                
+                <!-- Pouch body -->
+                <path d="M22 38L16 324C16 327 18 330 22 330H148C152 330 154 327 154 324L148 38H22Z" fill="url(#kraftPouchGradient)"/>
+                <path d="M22 38L16 324L32 330L36 38H22Z" fill="#000000" fill-opacity="0.08"/>
+                <path d="M148 38L154 324L138 330L134 38H148Z" fill="#000000" fill-opacity="0.08"/>
+                <line x1="85" y1="38" x2="85" y2="330" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+                
+                <!-- Valve -->
+                <circle cx="85" cy="62" r="7.5" fill="#C9C3B4" stroke="#B3AD9F" stroke-width="1"/>
+                <circle cx="83.5" cy="62" r="0.8" fill="#58544B"/>
+                <circle cx="86.5" cy="62" r="0.8" fill="#58544B"/>
+
+                <!-- Cotton Label with Terracotta (#C26343) Accent -->
+                <g filter="url(#labelShadow)">
+                  <rect x="28" y="85" width="114" height="205" rx="3" fill="#FAF8F5"/>
+                  <rect x="28" y="85" width="114" height="8" rx="3" fill="#C26343"/>
+                  <rect x="28" y="90" width="114" height="3" fill="#C26343"/>
+
+                  <text x="85" y="112" font-family="'Didot', 'Bodoni MT', serif" font-size="16" font-weight="600" letter-spacing="3" fill="#1C1E1B" text-anchor="middle">M O R A</text>
+                  <text x="85" y="123" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="2" fill="#767A72" text-anchor="middle">SPECIALTY COFFEE ROASTERS</text>
+                  
+                  <line x1="42" y1="131" x2="128" y2="131" stroke="#DCD7CD" stroke-width="0.8"/>
+                  
+                  <text x="85" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#1C1E1B" text-anchor="middle">COSTA RICA</text>
+                  <text x="85" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" fill="#52574F" text-anchor="middle">TARRAZÚ • FINCA LA PIRA</text>
+                  
+                  <rect x="48" y="168" width="74" height="11" rx="5.5" fill="#FBF0EC" stroke="#C26343" stroke-width="0.8"/>
+                  <text x="85" y="176" font-family="'SF Mono', monospace" font-size="5" font-weight="700" fill="#8C3F26" text-anchor="middle">ANAEROBIC // GEISHA</text>
+                  
+                  <text x="85" y="196" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Wild Raspberry • Hibiscus</text>
+                  <text x="85" y="206" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Blood Orange • Cocoa Nibs</text>
+                  
+                  <line x1="42" y1="216" x2="128" y2="216" stroke="#DCD7CD" stroke-width="0.8"/>
+                  
+                  <text x="40" y="228" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">ALTITUDE:</text>
+                  <text x="130" y="228" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">1,850 MASL</text>
+                  
+                  <text x="40" y="238" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">FERMENTATION:</text>
+                  <text x="130" y="238" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">72H IN-CHAMBER</text>
+                  
+                  <text x="40" y="248" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">SCA SCORE:</text>
+                  <text x="130" y="248" font-family="'SF Mono', monospace" font-size="4.5" font-weight="700" fill="#C26343" text-anchor="end">91.00 PTS</text>
+                  
+                  <rect x="36" y="258" width="98" height="20" rx="2" fill="#F4F0E8" stroke="#DFDACF" stroke-width="0.6"/>
+                  <text x="42" y="271" font-family="'SF Mono', monospace" font-size="4" fill="#6A6F66">ROASTED ON: 12.10.26</text>
+                  <text x="128" y="271" font-family="'SF Mono', monospace" font-size="4" font-weight="700" fill="#1C1E1B" text-anchor="end">250G / 8.8 OZ</text>
+                </g>
+              </svg>
+            </div>
+            <span class="mt-4 text-[11px] font-technical uppercase text-[#C26343] font-semibold tracking-widest">Variant 02 / Costa Rica Anaerobic</span>
+          </div>
+
+          <!-- ==================== BAG 03: COLOMBIA (THERMAL SHOCK HONEY / OCHRE UMBER) ==================== -->
+          <div class="flex flex-col items-center group cursor-pointer hidden sm:flex">
+            <div class="relative studio-shadow">
+              <svg width="170" height="340" viewBox="0 0 170 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Drop shadow base -->
+                <ellipse cx="85" cy="332" rx="72" ry="10" fill="#000000" fill-opacity="0.45"/>
+                
+                <!-- Crimp top -->
+                <rect x="22" y="14" width="126" height="24" rx="2" fill="#D8D2C4"/>
+                <line x1="22" y1="18" x2="148" y2="18" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="22" x2="148" y2="22" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="26" x2="148" y2="26" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="30" x2="148" y2="30" stroke="#B8B2A4" stroke-width="0.8"/>
+                <path d="M22 30L26 32L22 34Z" fill="#181B18"/>
+                <path d="M148 30L144 32L148 34Z" fill="#181B18"/>
+                
+                <!-- Pouch body -->
+                <path d="M22 38L16 324C16 327 18 330 22 330H148C152 330 154 327 154 324L148 38H22Z" fill="url(#kraftPouchGradient)"/>
+                <path d="M22 38L16 324L32 330L36 38H22Z" fill="#000000" fill-opacity="0.08"/>
+                <path d="M148 38L154 324L138 330L134 38H148Z" fill="#000000" fill-opacity="0.08"/>
+                <line x1="85" y1="38" x2="85" y2="330" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+                
+                <!-- Valve -->
+                <circle cx="85" cy="62" r="7.5" fill="#C9C3B4" stroke="#B3AD9F" stroke-width="1"/>
+                <circle cx="83.5" cy="62" r="0.8" fill="#58544B"/>
+                <circle cx="86.5" cy="62" r="0.8" fill="#58544B"/>
+
+                <!-- Cotton Label with Ochre Umber (#9A6B42) Accent -->
+                <g filter="url(#labelShadow)">
+                  <rect x="28" y="85" width="114" height="205" rx="3" fill="#FAF8F5"/>
+                  <rect x="28" y="85" width="114" height="8" rx="3" fill="#9A6B42"/>
+                  <rect x="28" y="90" width="114" height="3" fill="#9A6B42"/>
+
+                  <text x="85" y="112" font-family="'Didot', 'Bodoni MT', serif" font-size="16" font-weight="600" letter-spacing="3" fill="#1C1E1B" text-anchor="middle">M O R A</text>
+                  <text x="85" y="123" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="2" fill="#767A72" text-anchor="middle">SPECIALTY COFFEE ROASTERS</text>
+                  
+                  <line x1="42" y1="131" x2="128" y2="131" stroke="#DCD7CD" stroke-width="0.8"/>
+                  
+                  <text x="85" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#1C1E1B" text-anchor="middle">COLOMBIA</text>
+                  <text x="85" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" fill="#52574F" text-anchor="middle">HUILA • EL PARAÍSO</text>
+                  
+                  <rect x="50" y="168" width="70" height="11" rx="5.5" fill="#F8F3EC" stroke="#9A6B42" stroke-width="0.8"/>
+                  <text x="85" y="176" font-family="'SF Mono', monospace" font-size="5" font-weight="700" fill="#6B4524" text-anchor="middle">HONEY // PINK BOURBON</text>
+                  
+                  <text x="85" y="196" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Toffee Brittle • Black Cherry</text>
+                  <text x="85" y="206" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Dark Chocolate • Meyer Lemon</text>
+                  
+                  <line x1="42" y1="216" x2="128" y2="216" stroke="#DCD7CD" stroke-width="0.8"/>
+                  
+                  <text x="40" y="228" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">ALTITUDE:</text>
+                  <text x="130" y="228" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">1,750 MASL</text>
+                  
+                  <text x="40" y="238" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">PROCESS:</text>
+                  <text x="130" y="238" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">THERMAL SHOCK HONEY</text>
+                  
+                  <text x="40" y="248" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">SCA SCORE:</text>
+                  <text x="130" y="248" font-family="'SF Mono', monospace" font-size="4.5" font-weight="700" fill="#9A6B42" text-anchor="end">88.75 PTS</text>
+                  
+                  <rect x="36" y="258" width="98" height="20" rx="2" fill="#F4F0E8" stroke="#DFDACF" stroke-width="0.6"/>
+                  <text x="42" y="271" font-family="'SF Mono', monospace" font-size="4" fill="#6A6F66">ROASTED ON: 12.10.26</text>
+                  <text x="128" y="271" font-family="'SF Mono', monospace" font-size="4" font-weight="700" fill="#1C1E1B" text-anchor="end">250G / 8.8 OZ</text>
+                </g>
+              </svg>
+            </div>
+            <span class="mt-4 text-[11px] font-technical uppercase text-[#9FA49B] tracking-widest">Variant 03 / Colombia Honey</span>
+          </div>
+
+        </div>
+
+        <!-- SVG Gradients & Filter Definitions -->
+        <svg width="0" height="0" class="absolute">
+          <defs>
+            <linearGradient id="kraftPouchGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#D5CEBF" />
+              <stop offset="25%" stop-color="#E8E2D6" />
+              <stop offset="60%" stop-color="#DFD8CB" />
+              <stop offset="100%" stop-color="#C9C2B2" />
+            </linearGradient>
+            <filter id="labelShadow" x="-10%" y="-5%" width="120%" height="115%">
+              <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#141815" flood-opacity="0.15" />
+            </filter>
+          </defs>
+        </svg>
+
+        <!-- Studio Watermark Detail -->
+        <div class="absolute bottom-5 right-6 flex items-center gap-3 bg-[#111311]/80 backdrop-blur px-3 py-1.5 rounded border border-[#272D29]">
+          <span class="w-2 h-2 rounded-full bg-[#7D8B7A] animate-pulse"></span>
+          <span class="text-[10px] font-technical uppercase tracking-widest text-[#9EA39B]">NATURAL STUDIO RENDER // REAL TACTILE SCALES</span>
+        </div>
+      </div>
+
+      <!-- KEY METRICS ROW -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 text-left">
+        <div>
+          <span class="block text-xs font-technical uppercase text-[#C26343] mb-1">BAG SUBSTRATE</span>
+          <p class="font-editorial text-2xl text-[#FAF7F2]">Unbleached Kraft Pouch</p>
+          <p class="text-xs text-[#8A8F8A] mt-1">100% Home-Compostable Barrier Film (EVOH-Free).</p>
+        </div>
+        <div>
+          <span class="block text-xs font-technical uppercase text-[#C26343] mb-1">LABEL SPECIFICATION</span>
+          <p class="font-editorial text-2xl text-[#FAF7F2]">140gsm Cotton Tipped-On</p>
+          <p class="text-xs text-[#8A8F8A] mt-1">Water-soluble permanent adhesive with blind deboss seal.</p>
+        </div>
+        <div>
+          <span class="block text-xs font-technical uppercase text-[#C26343] mb-1">DEGASSING SYSTEM</span>
+          <p class="font-editorial text-2xl text-[#FAF7F2]">Ultrasonic Valve</p>
+          <p class="text-xs text-[#8A8F8A] mt-1">Industrial one-way valve for CO2 release without oxidation.</p>
+        </div>
+        <div>
+          <span class="block text-xs font-technical uppercase text-[#C26343] mb-1">ROAST PHILOSOPHY</span>
+          <p class="font-editorial text-2xl text-[#FAF7F2]">Nordic Light-Medium</p>
+          <p class="text-xs text-[#8A8F8A] mt-1">Preserving floral acidity, enzymatic sweetness, and terroir.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 1: THE DESIGN BRIEF & BRAND STRATEGY -->
+  <section id="overview" class="py-24 px-6 md:px-16 border-b border-[#272B28] bg-[#141715]">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-4">
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#C26343] block mb-3">01 / BRAND BRIEF</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2] leading-tight">
+            Elevating the bag into an archival artifact.
+          </h2>
+          <div class="w-16 h-[1px] bg-[#C26343] my-6"></div>
+          <p class="text-sm leading-relaxed text-[#9DA29B]">
+            Specialty coffee packaging is heavily crowded with loud neon sticker collages, cartoon mascots, or ultra-glossy plastic pouches that fight for attention on retail shelves. MORA was built on a philosophy of architectural quietness: natural tactile kraft paper, disciplined typography, and deep traceability that honors the agricultural producers.
+          </p>
+        </div>
+
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="p-8 bg-[#1B1F1C] rounded-xl border border-[#2D3530]">
+            <span class="text-xs font-technical text-[#C26343] block mb-4">PILLAR 01</span>
+            <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-3">Origin Transparency</h3>
+            <p class="text-xs text-[#9DA29B] leading-relaxed">
+              No proprietary blends or generic tasting notes. Elevation, processing method, washing station, and cupping scores are documented on the face with laboratory precision.
+            </p>
+          </div>
+
+          <div class="p-8 bg-[#1B1F1C] rounded-xl border border-[#2D3530]">
+            <span class="text-xs font-technical text-[#C26343] block mb-4">PILLAR 02</span>
+            <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-3">Tactile Sensation</h3>
+            <p class="text-xs text-[#9DA29B] leading-relaxed">
+              Eliminating artificial foil sheen. The combination of unbleached Swedish kraft and tipped-on fibrous cotton label invites touch and feels authentic on kitchen counters.
+            </p>
+          </div>
+
+          <div class="p-8 bg-[#1B1F1C] rounded-xl border border-[#2D3530]">
+            <span class="text-xs font-technical text-[#C26343] block mb-4">PILLAR 03</span>
+            <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-3">System Scalability</h3>
+            <p class="text-xs text-[#9DA29B] leading-relaxed">
+              A standardized base pouch paired with an interchangeable modular label allows MORA to launch hyper-limited micro-lot releases (under 50 bags) without re-tooling structural packaging.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: INTERACTIVE VARIANT INSPECTOR -->
+  <section id="lineup" class="py-24 px-6 md:px-16 border-b border-[#272B28] bg-[#121412]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#272B28]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#C26343] block mb-2">02 / PRODUCT VARIANTS</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">The 3 Micro-Lot Single Origins</h2>
+        </div>
+        <div class="flex items-center gap-2 mt-4 md:mt-0">
+          <button onclick="switchVariant('ethiopia')" id="btn-ethiopia" class="tab-btn active px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3C443E] transition">01 / Ethiopia</button>
+          <button onclick="switchVariant('costarica')" id="btn-costarica" class="tab-btn px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3C443E] text-[#9EA49B] transition">02 / Costa Rica</button>
+          <button onclick="switchVariant('colombia')" id="btn-colombia" class="tab-btn px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3C443E] text-[#9EA49B] transition">03 / Colombia</button>
+        </div>
+      </div>
+
+      <!-- DETAILED VARIANT VIEW -->
+      <div class="bg-[#181C19] rounded-2xl border border-[#2D3530] p-8 md:p-14 overflow-hidden">
+        
+        <!-- VARIANT 1: ETHIOPIA -->
+        <div id="view-ethiopia" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 flex justify-center py-6 bg-[#111311] rounded-xl border border-[#252A26] relative">
+            <div class="absolute top-4 left-4 text-[10px] font-technical text-[#7D8B7A]">ELEVATION 2,100M // FLORAL &amp; CITRIC</div>
+            <div class="studio-shadow py-4">
+              <!-- Re-use SVG Bag 1 -->
+              <svg width="200" height="380" viewBox="0 0 170 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="85" cy="332" rx="72" ry="10" fill="#000000" fill-opacity="0.45"/>
+                <rect x="22" y="14" width="126" height="24" rx="2" fill="#D8D2C4"/>
+                <line x1="22" y1="18" x2="148" y2="18" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="22" x2="148" y2="22" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="26" x2="148" y2="26" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="30" x2="148" y2="30" stroke="#B8B2A4" stroke-width="0.8"/>
+                <path d="M22 30L26 32L22 34Z" fill="#181B18"/>
+                <path d="M148 30L144 32L148 34Z" fill="#181B18"/>
+                <path d="M22 38L16 324C16 327 18 330 22 330H148C152 330 154 327 154 324L148 38H22Z" fill="url(#kraftPouchGradient)"/>
+                <path d="M22 38L16 324L32 330L36 38H22Z" fill="#000000" fill-opacity="0.08"/>
+                <path d="M148 38L154 324L138 330L134 38H148Z" fill="#000000" fill-opacity="0.08"/>
+                <line x1="85" y1="38" x2="85" y2="330" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+                <circle cx="85" cy="62" r="7.5" fill="#C9C3B4" stroke="#B3AD9F" stroke-width="1"/>
+                <circle cx="83.5" cy="62" r="0.8" fill="#58544B"/>
+                <circle cx="86.5" cy="62" r="0.8" fill="#58544B"/>
+                <g filter="url(#labelShadow)">
+                  <rect x="28" y="85" width="114" height="205" rx="3" fill="#FAF8F5"/>
+                  <rect x="28" y="85" width="114" height="8" rx="3" fill="#7D8B7A"/>
+                  <rect x="28" y="90" width="114" height="3" fill="#7D8B7A"/>
+                  <text x="85" y="112" font-family="'Didot', 'Bodoni MT', serif" font-size="16" font-weight="600" letter-spacing="3" fill="#1C1E1B" text-anchor="middle">M O R A</text>
+                  <text x="85" y="123" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="2" fill="#767A72" text-anchor="middle">SPECIALTY COFFEE ROASTERS</text>
+                  <line x1="42" y1="131" x2="128" y2="131" stroke="#DCD7CD" stroke-width="0.8"/>
+                  <text x="85" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#1C1E1B" text-anchor="middle">ETHIOPIA</text>
+                  <text x="85" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" fill="#52574F" text-anchor="middle">YIRGACHEFFE • GEDEB</text>
+                  <rect x="52" y="168" width="66" height="11" rx="5.5" fill="#F0EDE6" stroke="#7D8B7A" stroke-width="0.8"/>
+                  <text x="85" y="176" font-family="'SF Mono', monospace" font-size="5" font-weight="700" fill="#434F41" text-anchor="middle">WASHED // HEIRLOOM</text>
+                  <text x="85" y="196" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Bergamot • Jasmine</text>
+                  <text x="85" y="206" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Candied Lemon • White Peach</text>
+                  <line x1="42" y1="216" x2="128" y2="216" stroke="#DCD7CD" stroke-width="0.8"/>
+                  <text x="40" y="228" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">ALTITUDE:</text>
+                  <text x="130" y="228" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">2,100 MASL</text>
+                  <text x="40" y="238" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">PRODUCER:</text>
+                  <text x="130" y="238" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">WURKNA WASHING STN</text>
+                  <text x="40" y="248" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">SCA SCORE:</text>
+                  <text x="130" y="248" font-family="'SF Mono', monospace" font-size="4.5" font-weight="700" fill="#7D8B7A" text-anchor="end">89.25 PTS</text>
+                  <rect x="36" y="258" width="98" height="20" rx="2" fill="#F4F0E8" stroke="#DFDACF" stroke-width="0.6"/>
+                  <text x="42" y="271" font-family="'SF Mono', monospace" font-size="4" fill="#6A6F66">ROASTED ON: 12.10.26</text>
+                  <text x="128" y="271" font-family="'SF Mono', monospace" font-size="4" font-weight="700" fill="#1C1E1B" text-anchor="end">250G / 8.8 OZ</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#7D8B7A]">MICRO-LOT PROFILE // LOT NO. MR-ETH-01</span>
+            <h3 class="font-editorial text-4xl text-[#FAF7F2]">Ethiopia Yirgacheffe Washed</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Harvested from heirloom forest garden plots surrounding the Wurkna washing station in Gedeb. Fermented under spring water for 48 hours and dried on raised African beds for 18 days. Highly aromatic with tea-like floral lift and sparkling malic acidity.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#2D3530]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PROCESSING</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Fully Washed (48H Cold Spring)</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">ACCENT COLOR</span>
+                <p class="text-xs font-semibold text-[#7D8B7A]">Sage Mist (PMS 5635 C)</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">BREW RECOMMENDATION</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">V60 / Kalita Wave / Aeropress</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRICE POINT</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">€17.50 / 250g Bag</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VARIANT 2: COSTA RICA -->
+        <div id="view-costarica" class="hidden grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 flex justify-center py-6 bg-[#111311] rounded-xl border border-[#252A26] relative">
+            <div class="absolute top-4 left-4 text-[10px] font-technical text-[#C26343]">72H ANAEROBIC // WINE &amp; RED FRUIT</div>
+            <div class="studio-shadow py-4">
+              <svg width="200" height="380" viewBox="0 0 170 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="85" cy="332" rx="72" ry="10" fill="#000000" fill-opacity="0.5"/>
+                <rect x="22" y="14" width="126" height="24" rx="2" fill="#D8D2C4"/>
+                <line x1="22" y1="18" x2="148" y2="18" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="22" x2="148" y2="22" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="26" x2="148" y2="26" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="30" x2="148" y2="30" stroke="#B8B2A4" stroke-width="0.8"/>
+                <path d="M22 30L26 32L22 34Z" fill="#181B18"/>
+                <path d="M148 30L144 32L148 34Z" fill="#181B18"/>
+                <path d="M22 38L16 324C16 327 18 330 22 330H148C152 330 154 327 154 324L148 38H22Z" fill="url(#kraftPouchGradient)"/>
+                <path d="M22 38L16 324L32 330L36 38H22Z" fill="#000000" fill-opacity="0.08"/>
+                <path d="M148 38L154 324L138 330L134 38H148Z" fill="#000000" fill-opacity="0.08"/>
+                <line x1="85" y1="38" x2="85" y2="330" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+                <circle cx="85" cy="62" r="7.5" fill="#C9C3B4" stroke="#B3AD9F" stroke-width="1"/>
+                <circle cx="83.5" cy="62" r="0.8" fill="#58544B"/>
+                <circle cx="86.5" cy="62" r="0.8" fill="#58544B"/>
+                <g filter="url(#labelShadow)">
+                  <rect x="28" y="85" width="114" height="205" rx="3" fill="#FAF8F5"/>
+                  <rect x="28" y="85" width="114" height="8" rx="3" fill="#C26343"/>
+                  <rect x="28" y="90" width="114" height="3" fill="#C26343"/>
+                  <text x="85" y="112" font-family="'Didot', 'Bodoni MT', serif" font-size="16" font-weight="600" letter-spacing="3" fill="#1C1E1B" text-anchor="middle">M O R A</text>
+                  <text x="85" y="123" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="2" fill="#767A72" text-anchor="middle">SPECIALTY COFFEE ROASTERS</text>
+                  <line x1="42" y1="131" x2="128" y2="131" stroke="#DCD7CD" stroke-width="0.8"/>
+                  <text x="85" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#1C1E1B" text-anchor="middle">COSTA RICA</text>
+                  <text x="85" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" fill="#52574F" text-anchor="middle">TARRAZÚ • FINCA LA PIRA</text>
+                  <rect x="48" y="168" width="74" height="11" rx="5.5" fill="#FBF0EC" stroke="#C26343" stroke-width="0.8"/>
+                  <text x="85" y="176" font-family="'SF Mono', monospace" font-size="5" font-weight="700" fill="#8C3F26" text-anchor="middle">ANAEROBIC // GEISHA</text>
+                  <text x="85" y="196" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Wild Raspberry • Hibiscus</text>
+                  <text x="85" y="206" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Blood Orange • Cocoa Nibs</text>
+                  <line x1="42" y1="216" x2="128" y2="216" stroke="#DCD7CD" stroke-width="0.8"/>
+                  <text x="40" y="228" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">ALTITUDE:</text>
+                  <text x="130" y="228" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">1,850 MASL</text>
+                  <text x="40" y="238" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">FERMENTATION:</text>
+                  <text x="130" y="238" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">72H IN-CHAMBER</text>
+                  <text x="40" y="248" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">SCA SCORE:</text>
+                  <text x="130" y="248" font-family="'SF Mono', monospace" font-size="4.5" font-weight="700" fill="#C26343" text-anchor="end">91.00 PTS</text>
+                  <rect x="36" y="258" width="98" height="20" rx="2" fill="#F4F0E8" stroke="#DFDACF" stroke-width="0.6"/>
+                  <text x="42" y="271" font-family="'SF Mono', monospace" font-size="4" fill="#6A6F66">ROASTED ON: 12.10.26</text>
+                  <text x="128" y="271" font-family="'SF Mono', monospace" font-size="4" font-weight="700" fill="#1C1E1B" text-anchor="end">250G / 8.8 OZ</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#C26343]">MICRO-LOT PROFILE // LOT NO. MR-CRI-02</span>
+            <h3 class="font-editorial text-4xl text-[#FAF7F2]">Costa Rica Tarrazú Anaerobic</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Produced by Carlos Montero at Finca La Pira. Whole ripe cherries are sealed into pressurized stainless steel fermentation tanks for 72 hours with their own natural carbonic juices. Generates an explosive syrupy profile with notes of crushed raspberry and hibiscus tea.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#2D3530]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PROCESSING</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">72h Anaerobic Sealed Maceration</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">ACCENT COLOR</span>
+                <p class="text-xs font-semibold text-[#C26343]">Terracotta Ember (PMS 7586 C)</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">VARIETAL</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Geisha &amp; Red Catuai</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRICE POINT</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">€22.00 / 250g Bag</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VARIANT 3: COLOMBIA -->
+        <div id="view-colombia" class="hidden grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 flex justify-center py-6 bg-[#111311] rounded-xl border border-[#252A26] relative">
+            <div class="absolute top-4 left-4 text-[10px] font-technical text-[#9A6B42]">THERMAL SHOCK HONEY // SWEET &amp; DENSE</div>
+            <div class="studio-shadow py-4">
+              <svg width="200" height="380" viewBox="0 0 170 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="85" cy="332" rx="72" ry="10" fill="#000000" fill-opacity="0.45"/>
+                <rect x="22" y="14" width="126" height="24" rx="2" fill="#D8D2C4"/>
+                <line x1="22" y1="18" x2="148" y2="18" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="22" x2="148" y2="22" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="26" x2="148" y2="26" stroke="#B8B2A4" stroke-width="0.8"/>
+                <line x1="22" y1="30" x2="148" y2="30" stroke="#B8B2A4" stroke-width="0.8"/>
+                <path d="M22 30L26 32L22 34Z" fill="#181B18"/>
+                <path d="M148 30L144 32L148 34Z" fill="#181B18"/>
+                <path d="M22 38L16 324C16 327 18 330 22 330H148C152 330 154 327 154 324L148 38H22Z" fill="url(#kraftPouchGradient)"/>
+                <path d="M22 38L16 324L32 330L36 38H22Z" fill="#000000" fill-opacity="0.08"/>
+                <path d="M148 38L154 324L138 330L134 38H148Z" fill="#000000" fill-opacity="0.08"/>
+                <line x1="85" y1="38" x2="85" y2="330" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+                <circle cx="85" cy="62" r="7.5" fill="#C9C3B4" stroke="#B3AD9F" stroke-width="1"/>
+                <circle cx="83.5" cy="62" r="0.8" fill="#58544B"/>
+                <circle cx="86.5" cy="62" r="0.8" fill="#58544B"/>
+                <g filter="url(#labelShadow)">
+                  <rect x="28" y="85" width="114" height="205" rx="3" fill="#FAF8F5"/>
+                  <rect x="28" y="85" width="114" height="8" rx="3" fill="#9A6B42"/>
+                  <rect x="28" y="90" width="114" height="3" fill="#9A6B42"/>
+                  <text x="85" y="112" font-family="'Didot', 'Bodoni MT', serif" font-size="16" font-weight="600" letter-spacing="3" fill="#1C1E1B" text-anchor="middle">M O R A</text>
+                  <text x="85" y="123" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="2" fill="#767A72" text-anchor="middle">SPECIALTY COFFEE ROASTERS</text>
+                  <line x1="42" y1="131" x2="128" y2="131" stroke="#DCD7CD" stroke-width="0.8"/>
+                  <text x="85" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#1C1E1B" text-anchor="middle">COLOMBIA</text>
+                  <text x="85" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" fill="#52574F" text-anchor="middle">HUILA • EL PARAÍSO</text>
+                  <rect x="50" y="168" width="70" height="11" rx="5.5" fill="#F8F3EC" stroke="#9A6B42" stroke-width="0.8"/>
+                  <text x="85" y="176" font-family="'SF Mono', monospace" font-size="5" font-weight="700" fill="#6B4524" text-anchor="middle">HONEY // PINK BOURBON</text>
+                  <text x="85" y="196" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Toffee Brittle • Black Cherry</text>
+                  <text x="85" y="206" font-family="'Didot', 'Bodoni MT', serif" font-size="7.5" font-style="italic" fill="#2E332D" text-anchor="middle">Dark Chocolate • Meyer Lemon</text>
+                  <line x1="42" y1="216" x2="128" y2="216" stroke="#DCD7CD" stroke-width="0.8"/>
+                  <text x="40" y="228" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">ALTITUDE:</text>
+                  <text x="130" y="228" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">1,750 MASL</text>
+                  <text x="40" y="238" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">PROCESS:</text>
+                  <text x="130" y="238" font-family="'SF Mono', monospace" font-size="4.5" font-weight="600" fill="#1C1E1B" text-anchor="end">THERMAL SHOCK HONEY</text>
+                  <text x="40" y="248" font-family="'SF Mono', monospace" font-size="4.5" fill="#787D75">SCA SCORE:</text>
+                  <text x="130" y="248" font-family="'SF Mono', monospace" font-size="4.5" font-weight="700" fill="#9A6B42" text-anchor="end">88.75 PTS</text>
+                  <rect x="36" y="258" width="98" height="20" rx="2" fill="#F4F0E8" stroke="#DFDACF" stroke-width="0.6"/>
+                  <text x="42" y="271" font-family="'SF Mono', monospace" font-size="4" fill="#6A6F66">ROASTED ON: 12.10.26</text>
+                  <text x="128" y="271" font-family="'SF Mono', monospace" font-size="4" font-weight="700" fill="#1C1E1B" text-anchor="end">250G / 8.8 OZ</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#9A6B42]">MICRO-LOT PROFILE // LOT NO. MR-COL-03</span>
+            <h3 class="font-editorial text-4xl text-[#FAF7F2]">Colombia Huila Thermal Honey</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Cultivated by Diego Bermudez in Piendamó, Cauca / Huila border. Uses controlled thermal-shock washing to seal in volatile esters and sweetness. Characterized by decadent dark chocolate, buttery toffee, and a complex Meyer lemon finish.
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#2D3530]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PROCESSING</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Thermal Shock Honey</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">ACCENT COLOR</span>
+                <p class="text-xs font-semibold text-[#9A6B42]">Ochre Umber (PMS 464 C)</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">IDEAL EXTRACTION</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Espresso &amp; Aeropress</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRICE POINT</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">€19.00 / 250g Bag</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: LABEL ARCHITECTURE & DIE-CUT SPECIMEN -->
+  <section id="label-system" class="py-24 px-6 md:px-16 border-b border-[#272B28] bg-[#141715]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#272B28]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#C26343] block mb-2">03 / LABEL BLUEPRINT</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">Modular Label Grid &amp; Regulatory Die-Cut</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">100MM × 180MM COTTON STOCK // 4MM CORNER RADIUS</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- FLAT LABEL SPECIMEN BLUEPRINT -->
+        <div class="lg:col-span-7 flex justify-center p-8 bg-[#101210] rounded-2xl border border-[#272D29] relative overflow-hidden">
+          <!-- Background Grid Overlay -->
+          <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+          <!-- The Flat Cotton Label Blueprint Card -->
+          <div class="label-cotton text-[#181B18] p-8 rounded-lg shadow-2xl border border-[#D5D0C2] w-full max-w-md relative z-10">
+            <!-- Top Color Bar -->
+            <div class="w-full h-3 rounded-t bg-[#C26343] -mt-8 -mx-8 mb-6" style="width: calc(100% + 4rem);"></div>
+
+            <!-- Header Branding -->
+            <div class="text-center pb-4 border-b border-[#D5D0C2]">
+              <h4 class="font-editorial text-3xl font-medium tracking-[0.25em] text-[#181B18]">M O R A</h4>
+              <p class="text-[9px] font-sans-clean uppercase tracking-[0.3em] text-[#6C7168] mt-1">SPECIALTY COFFEE ROASTERS • COPENHAGEN</p>
+            </div>
+
+            <!-- Central Origin Hero -->
+            <div class="text-center py-5">
+              <span class="text-[9px] font-technical uppercase tracking-widest text-[#C26343] font-bold">SINGLE ORIGIN MICRO-LOT</span>
+              <h3 class="font-sans-clean text-2xl font-bold tracking-tight text-[#181B18] mt-1">COSTA RICA</h3>
+              <p class="text-xs font-sans-clean text-[#5E645A] mt-0.5">Tarrazú Valley • Finca La Pira</p>
+              
+              <!-- Process Pill -->
+              <div class="inline-block px-3 py-1 bg-[#FBF0EC] border border-[#C26343]/60 rounded-full mt-3">
+                <span class="text-[10px] font-technical font-bold text-[#8C3F26]">72H ANAEROBIC // GEISHA</span>
+              </div>
+            </div>
+
+            <!-- Tasting Notes Section -->
+            <div class="py-4 border-y border-[#D5D0C2] text-center">
+              <span class="text-[9px] font-technical text-[#767C73] uppercase tracking-wider block mb-1">CUPPING FLAVOR PROFILE</span>
+              <p class="font-editorial text-lg italic text-[#252925]">
+                Wild Raspberry, Hibiscus Blossom, Blood Orange &amp; Raw Cocoa
+              </p>
+            </div>
+
+            <!-- Agronomic Data Table -->
+            <div class="py-4 space-y-2 text-xs font-technical text-[#565C53]">
+              <div class="flex justify-between border-b border-[#EAE5D9] pb-1">
+                <span>ELEVATION:</span>
+                <span class="font-semibold text-[#181B18]">1,850 Meters Above Sea Level</span>
+              </div>
+              <div class="flex justify-between border-b border-[#EAE5D9] pb-1">
+                <span>HARVEST PERIOD:</span>
+                <span class="font-semibold text-[#181B18]">Jan – March 2026</span>
+              </div>
+              <div class="flex justify-between border-b border-[#EAE5D9] pb-1">
+                <span>Q-GRADER RATING:</span>
+                <span class="font-bold text-[#C26343]">SCA 91.00 Specialty Grade</span>
+              </div>
+            </div>
+
+            <!-- Roaster Stamp Box -->
+            <div class="p-3 bg-[#F4F0E8] border border-[#DDD8CB] rounded flex justify-between items-center text-[10px] font-technical text-[#5B6057] mt-3">
+              <div>
+                <span class="block">BATCH LOT: CR-LP-02</span>
+                <span>ROASTED ON: [ 12.10.26 ]</span>
+              </div>
+              <div class="text-right">
+                <span class="block font-bold text-[#181B18]">250G / 8.8 OZ</span>
+                <span class="text-[8px] text-[#7C8278]">WHOLE BEAN</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BLUEPRINT SPECIFICATION RATIONALE -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-technical uppercase text-[#C26343]">ENGINEERING SPECIFICATIONS</span>
+          <h3 class="font-editorial text-3xl text-[#FAF7F2]">Modular Labeling Architecture</h3>
+          <p class="text-xs text-[#9DA29B] leading-relaxed">
+            By decoupling the base stand-up pouch (neutral kraft with degassing valve) from the information-bearing label, the roastery eliminates the minimum order quantity (MOQ) barrier of custom-printed foil pouches.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="p-4 bg-[#1B1F1C] rounded-lg border border-[#2D3530]">
+              <h4 class="text-xs font-technical text-[#C26343] uppercase mb-1">01 / SUBSTRATE MATERIAL</h4>
+              <p class="text-xs text-[#E6E3DB]">140gsm FSC-certified uncoated cotton paper. High tensile tear strength with water-resistant soy-oil overprint varnish.</p>
+            </div>
+
+            <div class="p-4 bg-[#1B1F1C] rounded-lg border border-[#2D3530]">
+              <h4 class="text-xs font-technical text-[#C26343] uppercase mb-1">02 / COLOR CODING SYSTEM</h4>
+              <p class="text-xs text-[#E6E3DB]">A 4mm top bleed bar instantly communicates the processing category: Sage (Washed), Terracotta (Anaerobic), and Umber (Honey).</p>
+            </div>
+
+            <div class="p-4 bg-[#1B1F1C] rounded-lg border border-[#2D3530]">
+              <h4 class="text-xs font-technical text-[#C26343] uppercase mb-1">03 / VARIABLE THERMAL ROAST WINDOW</h4>
+              <p class="text-xs text-[#E6E3DB]">The lower rectangle accommodates on-demand thermal imprint for exact roast date, batch lot, and roaster initials at packing time.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: COLOR ARCHITECTURE & FINISHES -->
+  <section id="palette" class="py-24 px-6 md:px-16 border-b border-[#272B28] bg-[#121412]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#272B28]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#C26343] block mb-2">04 / CHROMATIC HARMONY</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">Volcanic Soil &amp; Process Palette</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">CLICK ANY SWATCH TO COPY COLOR VALUE</p>
+      </div>
+
+      <!-- PALETTE TILES -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        
+        <!-- Swatch 1: Swedish Kraft -->
+        <div onclick="copyColor('E7E1D4', 'Swedish Kraft')" class="group cursor-pointer bg-[#1A1E1B] p-5 rounded-xl border border-[#2C342F] hover:border-[#C26343] transition">
+          <div class="h-32 rounded-lg mb-4 shadow-inner border border-[#D5CEC0]" style="background-color: #E7E1D4;"></div>
+          <span class="text-[10px] font-technical text-[#C26343] block uppercase">BASE SUBSTRATE</span>
+          <h4 class="font-editorial text-xl text-[#FAF7F2] my-1">Swedish Kraft</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#29302B]">
+            <p>HEX: <span class="text-[#FAF7F2]">#E7E1D4</span></p>
+            <p>RGB: 231, 225, 212</p>
+            <p>PMS: Warm Gray 1 U</p>
+            <p>CMYK: 4, 5, 12, 5</p>
+          </div>
+        </div>
+
+        <!-- Swatch 2: Terracotta Ember -->
+        <div onclick="copyColor('C26343', 'Terracotta Ember')" class="group cursor-pointer bg-[#1A1E1B] p-5 rounded-xl border border-[#2C342F] hover:border-[#C26343] transition">
+          <div class="h-32 rounded-lg mb-4 shadow-inner border border-[#A64E32]" style="background-color: #C26343;"></div>
+          <span class="text-[10px] font-technical text-[#C26343] block uppercase">ANAEROBIC PROCESS</span>
+          <h4 class="font-editorial text-xl text-[#FAF7F2] my-1">Terracotta Ember</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#29302B]">
+            <p>HEX: <span class="text-[#FAF7F2]">#C26343</span></p>
+            <p>RGB: 194, 99, 67</p>
+            <p>PMS: 7586 C</p>
+            <p>CMYK: 15, 68, 78, 12</p>
+          </div>
+        </div>
+
+        <!-- Swatch 3: Sage Mist -->
+        <div onclick="copyColor('7D8B7A', 'Sage Mist')" class="group cursor-pointer bg-[#1A1E1B] p-5 rounded-xl border border-[#2C342F] hover:border-[#C26343] transition">
+          <div class="h-32 rounded-lg mb-4 shadow-inner border border-[#637060]" style="background-color: #7D8B7A;"></div>
+          <span class="text-[10px] font-technical text-[#C26343] block uppercase">WASHED PROCESS</span>
+          <h4 class="font-editorial text-xl text-[#FAF7F2] my-1">Sage Mist</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#29302B]">
+            <p>HEX: <span class="text-[#FAF7F2]">#7D8B7A</span></p>
+            <p>RGB: 125, 139, 122</p>
+            <p>PMS: 5635 C</p>
+            <p>CMYK: 40, 20, 42, 14</p>
+          </div>
+        </div>
+
+        <!-- Swatch 4: Ochre Umber -->
+        <div onclick="copyColor('9A6B42', 'Ochre Umber')" class="group cursor-pointer bg-[#1A1E1B] p-5 rounded-xl border border-[#2C342F] hover:border-[#C26343] transition">
+          <div class="h-32 rounded-lg mb-4 shadow-inner border border-[#7D532F]" style="background-color: #9A6B42;"></div>
+          <span class="text-[10px] font-technical text-[#C26343] block uppercase">HONEY PROCESS</span>
+          <h4 class="font-editorial text-xl text-[#FAF7F2] my-1">Ochre Umber</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#29302B]">
+            <p>HEX: <span class="text-[#FAF7F2]">#9A6B42</span></p>
+            <p>RGB: 154, 107, 66</p>
+            <p>PMS: 464 C</p>
+            <p>CMYK: 28, 55, 80, 22</p>
+          </div>
+        </div>
+
+        <!-- Swatch 5: Roasted Basalt -->
+        <div onclick="copyColor('1C1E1B', 'Roasted Basalt')" class="group cursor-pointer bg-[#1A1E1B] p-5 rounded-xl border border-[#2C342F] hover:border-[#C26343] transition">
+          <div class="h-32 rounded-lg mb-4 shadow-inner border border-[#2E332E]" style="background-color: #1C1E1B;"></div>
+          <span class="text-[10px] font-technical text-[#C26343] block uppercase">LABEL INK</span>
+          <h4 class="font-editorial text-xl text-[#FAF7F2] my-1">Roasted Basalt</h4>
+          <div class="text-[11px] font-technical text-[#8A8F8A] space-y-0.5 mt-3 pt-3 border-t border-[#29302B]">
+            <p>HEX: <span class="text-[#FAF7F2]">#1C1E1B</span></p>
+            <p>RGB: 28, 30, 27</p>
+            <p>PMS: Black 7 C</p>
+            <p>CMYK: 65, 55, 60, 85</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Toast Feedback -->
+      <div id="copyToast" class="fixed bottom-6 right-6 bg-[#FAF7F2] text-[#121412] px-4 py-2.5 rounded-lg shadow-2xl text-xs font-technical uppercase tracking-wider hidden transition-all duration-300 z-50">
+        Copied to clipboard!
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 5: SUSTAINABLE MATERIALS & VALVE ANATOMY -->
+  <section id="production" class="py-24 px-6 md:px-16 border-b border-[#272B28] bg-[#141715]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#272B28]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#C26343] block mb-2">05 / SUSTAINABILITY &amp; BARRIER SCIENCE</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">100% Home-Compostable Pouch Spec</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">ZERO ALUMINUM FOIL LINING // EN 13432 CERTIFIED</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 bg-[#1B1F1C] rounded-xl border border-[#2D3530]">
+          <div class="w-12 h-12 rounded-full bg-[#242A25] border border-[#384239] flex items-center justify-center text-[#7D8B7A] mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">PLA / Bio-PBS Inner Barrier</h4>
+          <p class="text-xs text-[#9DA29B] leading-relaxed">
+            Replaces conventional petrochemical aluminum foils with a plant-derived cornstarch PLA barrier film. Guarantees less than 0.5 cm³/m²/day oxygen transmission rate while breaking down in domestic compost within 90 days.
+          </p>
+        </div>
+
+        <div class="p-8 bg-[#1B1F1C] rounded-xl border border-[#2D3530]">
+          <div class="w-12 h-12 rounded-full bg-[#242A25] border border-[#384239] flex items-center justify-center text-[#C26343] mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Compostable Degassing Valve</h4>
+          <p class="text-xs text-[#9DA29B] leading-relaxed">
+            Molded from bio-based polybutylene succinate (Bio-PBS). Relieves carbon dioxide pressure emitted by freshly roasted coffee while sealing out ambient moisture and oxygen, extending freshness for 12 weeks.
+          </p>
+        </div>
+
+        <div class="p-8 bg-[#1B1F1C] rounded-xl border border-[#2D3530]">
+          <div class="w-12 h-12 rounded-full bg-[#242A25] border border-[#384239] flex items-center justify-center text-[#9A6B42] mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+          </div>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Water-Soluble Soy Inks</h4>
+          <p class="text-xs text-[#9DA29B] leading-relaxed">
+            All text and color codes are printed with heavy-metal-free vegetable soy oil inks. The label cleanly separates during paper repulping processes with zero toxic chemical runoff.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CASE STUDY FOOTER -->
+  <footer class="py-16 px-6 md:px-16 bg-[#0E100E] border-t border-[#272B28]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-xs font-technical text-[#7C8279]">
+      <div>
+        <p class="text-[#FAF7F2] font-editorial text-2xl">M O R A  C O F F E E  R O A S T E R S</p>
+        <p class="mt-1">SPECIALTY COFFEE PACKAGING DESIGN &amp; BRAND CASE STUDY</p>
+      </div>
+      <div class="mt-6 md:mt-0 text-right">
+        <p>© 2026 FICTIONAL PORTFOLIO SPECIFICATION. ALL ASSETS DESIGNED FOR HUMAN SCALE &amp; COMPOSTABILITY.</p>
+        <p class="mt-0.5 text-[#C26343]">ZERO AI ARTIFACTS // READY FOR RETAIL PRODUCTION</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR INTERACTION (VARIANT SWITCHER & COPY COLOR) -->
+  <script>
+    function copyColor(hex, name) {
+      navigator.clipboard.writeText('#' + hex).then(() => {
+        const toast = document.getElementById('copyToast');
+        toast.innerText = 'COPIED ' + name.toUpperCase() + ' (#' + hex + ')';
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 2200);
+      });
+    }
+
+    function switchVariant(variant) {
+      const variants = ['ethiopia', 'costarica', 'colombia'];
+      variants.forEach(v => {
+        const el = document.getElementById('view-' + v);
+        const btn = document.getElementById('btn-' + v);
+        if (v === variant) {
+          el.classList.remove('hidden');
+          el.classList.add('grid');
+          btn.classList.add('active', 'text-[#FAF7F2]', 'bg-[#1E201E]');
+          btn.classList.remove('text-[#9EA49B]');
+        } else {
+          el.classList.add('hidden');
+          el.classList.remove('grid');
+          btn.classList.remove('active', 'text-[#FAF7F2]', 'bg-[#1E201E]');
+          btn.classList.add('text-[#9EA49B]');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

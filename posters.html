@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POSTER SERIES // 2026 — Typographic Print Design Portfolio</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --serif: 'Didot', 'Bodoni MT', 'Cinzel', 'Playfair Display', Georgia, serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      --mono: 'SF Mono', Consolas, 'Courier New', monospace;
+    }
+
+    .font-editorial { font-family: var(--serif); }
+    .font-sans-clean { font-family: var(--sans); }
+    .font-technical { font-family: var(--mono); }
+
+    /* International A1 Poster Aspect Ratio (1 : 1.4142) */
+    .aspect-a1 {
+      aspect-ratio: 1 / 1.4142;
+    }
+
+    /* Print Paper Textures */
+    .paper-texture-warm {
+      background-color: #F4F1EA;
+      background-image: 
+        radial-gradient(#dcd5c7 0.65px, transparent 0.65px),
+        radial-gradient(#dcd5c7 0.65px, #F4F1EA 0.65px);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+    }
+
+    .paper-texture-concrete {
+      background-color: #E6E3DC;
+      background-image: radial-gradient(#ccc6b8 0.65px, transparent 0.65px);
+      background-size: 16px 16px;
+    }
+
+    .poster-gallery-shadow {
+      box-shadow: 
+        0 25px 40px -15px rgba(10, 12, 11, 0.35),
+        0 45px 70px -25px rgba(10, 12, 11, 0.25),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+    }
+
+    .hanging-clip {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Active Tab State */
+    .tab-btn.active {
+      background-color: #1C1F1D;
+      color: #FAF8F5;
+      border-color: #1C1F1D;
+    }
+  </style>
+</head>
+<body class="bg-[#0F1110] text-[#E6E3DD] font-sans-clean antialiased selection:bg-[#E63917] selection:text-white">
+
+  <!-- TOP HEADER -->
+  <header class="border-b border-[#242825] bg-[#0F1110]/90 backdrop-blur sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <span class="text-xs tracking-[0.25em] uppercase font-technical text-[#8A8F8A]">PORTFOLIO // 2026</span>
+        <span class="text-[#363B37]">•</span>
+        <span class="text-xs tracking-wider uppercase font-sans-clean text-[#D2CEBF]">POSTER ARCHIVE // A1 SERIES</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#overview" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Brief</a>
+        <a href="#posters" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">The 3 Posters</a>
+        <a href="#grid-system" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Grid Anatomy</a>
+        <a href="#print-specs" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Print Finishes</a>
+        <span class="px-2.5 py-1 text-[11px] font-technical uppercase border border-[#E63917]/50 text-[#E63917] rounded-full">Screen &amp; Offset</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO COVER SECTION -->
+  <section id="overview" class="py-20 px-6 md:px-16 border-b border-[#242825] bg-gradient-to-b from-[#131614] to-[#0F1110]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#242825] pb-10 mb-12">
+        <div class="max-w-3xl">
+          <p class="text-xs font-technical text-[#E63917] uppercase tracking-[0.3em] mb-3">CURATED COMMISSION // TYPOGRAPHIC POSTER DESIGN</p>
+          <h1 class="font-editorial text-5xl md:text-7xl lg:text-8xl tracking-tight text-[#FAF7F2] leading-[0.95]">
+            POSTER ARCHIVE
+          </h1>
+          <p class="font-editorial italic text-2xl md:text-3xl text-[#9E9B93] mt-3 font-light">
+            Three Cultural Formats: Sound, Architecture &amp; Nordic Cinema
+          </p>
+        </div>
+        
+        <div class="mt-8 lg:mt-0 text-left lg:text-right max-w-sm">
+          <span class="text-[10px] font-technical uppercase tracking-widest text-[#8A8F8A] block mb-1">CORE DISCIPLINE</span>
+          <p class="text-sm text-[#DED9CD] font-medium">Asymmetric Swiss Grids, Strict Typographic Hierarchy &amp; Authentic Print Embellishments</p>
+          <p class="text-xs text-[#868C86] mt-2 font-technical">STANDARD A1 FORMAT (594 × 841MM) // ZERO AI ARTIFACTS</p>
+        </div>
+      </div>
+
+      <!-- DESIGN PHILOSOPHY CARDS -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 bg-[#151816] rounded-xl border border-[#272D29]">
+          <span class="text-xs font-technical text-[#E63917] block mb-2">01 / TYPOGRAPHIC DISCIPLINE</span>
+          <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Structure Before Decor</h3>
+          <p class="text-xs text-[#9B9F98] leading-relaxed">
+            Eliminating arbitrary digital gradients and filler graphics. Every line length, point size contrast, and negative margin is dictated by an underlying mathematical grid.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#151816] rounded-xl border border-[#272D29]">
+          <span class="text-xs font-technical text-[#E63917] block mb-2">02 / CONTENT AUTHENTICITY</span>
+          <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Real Curatorial Details</h3>
+          <p class="text-xs text-[#9B9F98] leading-relaxed">
+            All text, performer billing, curatorial essays, screening times, and venue coordinates are fully articulated with zero placeholder "lorem ipsum" or illegible pseudo-fonts.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#151816] rounded-xl border border-[#272D29]">
+          <span class="text-xs font-technical text-[#E63917] block mb-2">03 / PRINT TACTILITY</span>
+          <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Production Honesty</h3>
+          <p class="text-xs text-[#9B9F98] leading-relaxed">
+            Designed for genuine physical execution: spot fluorescent inks, metallic silkscreen silver, uncoated G.F Smith cotton boards, and precision blind deboss registration.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: THE THREE POSTERS SHOWCASE -->
+  <section id="posters" class="py-24 px-6 md:px-16 border-b border-[#242825] bg-[#111312]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#242825]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#E63917] block mb-2">EXHIBITION GALLERY</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">The Poster Collection (A1 Series)</h2>
+          <p class="text-xs text-[#8A8F8A] mt-2 font-technical">SCALE: 594 × 841MM // 3 DISTINCT ART DIRECTIONS</p>
+        </div>
+        <div class="flex items-center gap-2 mt-4 md:mt-0">
+          <button onclick="switchPoster('p1')" id="btn-p1" class="tab-btn active px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3A403C] transition">01 / Music Festival</button>
+          <button onclick="switchPoster('p2')" id="btn-p2" class="tab-btn px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3A403C] text-[#9EA49B] transition">02 / Architecture</button>
+          <button onclick="switchPoster('p3')" id="btn-p3" class="tab-btn px-4 py-1.5 rounded-full text-xs font-technical uppercase border border-[#3A403C] text-[#9EA49B] transition">03 / Cinema Symposium</button>
+        </div>
+      </div>
+
+      <!-- MAIN INTERACTIVE POSTER CONTAINER -->
+      <div class="bg-[#171A18] rounded-2xl border border-[#2A302C] p-6 sm:p-12 overflow-hidden shadow-2xl">
+        
+        <!-- ==================== POSTER 01: RESONANS '26 MUSIC FESTIVAL ==================== -->
+        <div id="view-p1" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Poster Physical Mockup with Industrial Clips -->
+          <div class="lg:col-span-6 flex justify-center py-6 bg-[#0E100F] rounded-xl border border-[#242925] relative">
+            
+            <!-- Hanging Clips Top Elements -->
+            <div class="absolute -top-3 flex justify-between w-64 z-20">
+              <div class="w-8 h-6 bg-[#333835] rounded-sm hanging-clip border border-[#484F4B] flex items-center justify-center">
+                <div class="w-4 h-2 bg-[#1A1C1A] rounded-xs"></div>
+              </div>
+              <div class="w-8 h-6 bg-[#333835] rounded-sm hanging-clip border border-[#484F4B] flex items-center justify-center">
+                <div class="w-4 h-2 bg-[#1A1C1A] rounded-xs"></div>
+              </div>
+            </div>
+
+            <!-- The A1 Poster Canvas (Pure Vector & Typographic Layout) -->
+            <div class="w-full max-w-[390px] aspect-a1 bg-[#FAF8F5] text-[#121413] p-7 rounded-xs poster-gallery-shadow relative flex flex-col justify-between overflow-hidden border border-[#D5D0C5]">
+              
+              <!-- Subtle Paper Texture Overlay -->
+              <div class="absolute inset-0 paper-texture-warm opacity-70 pointer-events-none"></div>
+
+              <!-- Top Micro Registration Line -->
+              <div class="relative z-10 flex justify-between items-baseline border-b border-[#121413] pb-2 text-[8px] font-technical text-[#555953]">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-[#E63917]"></span>
+                  <span class="font-bold text-[#121413]">RESONANS // 2026</span>
+                </div>
+                <span>KRAFTWERK BERLIN • 16–18 OCT</span>
+                <span>EDITION 500</span>
+              </div>
+
+              <!-- Main Hero Typographic Lockup (Brutalist Swiss Sound Poster) -->
+              <div class="relative z-10 my-auto py-2">
+                
+                <!-- Festival Big Title -->
+                <h3 class="font-sans-clean text-5xl sm:text-6xl font-black tracking-[-0.04em] text-[#121413] leading-[0.88] uppercase">
+                  RESO<br>
+                  <span class="text-[#E63917]">NANS</span>
+                </h3>
+                
+                <!-- Acoustic Waveform Frequency Graphic (Vector SVG Sound Wave Phase) -->
+                <div class="my-4 py-2 border-y border-[#121413]/20 relative">
+                  <svg width="100%" height="52" viewBox="0 0 320 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Audio Oscilloscope Grid lines -->
+                    <line x1="0" y1="26" x2="320" y2="26" stroke="#D0CAC0" stroke-width="0.8"/>
+                    <line x1="80" y1="0" x2="80" y2="52" stroke="#D0CAC0" stroke-dasharray="2 2" stroke-width="0.6"/>
+                    <line x1="160" y1="0" x2="160" y2="52" stroke="#D0CAC0" stroke-dasharray="2 2" stroke-width="0.6"/>
+                    <line x1="240" y1="0" x2="240" y2="52" stroke="#D0CAC0" stroke-dasharray="2 2" stroke-width="0.6"/>
+
+                    <!-- Acoustic Wave Interference Paths -->
+                    <path d="M0 26C40 26 50 4 80 4C110 4 120 48 160 48C200 48 210 12 240 12C270 12 280 26 320 26" stroke="#121413" stroke-width="1.8"/>
+                    <path d="M0 26C30 26 40 14 80 14C120 14 130 38 160 38C190 38 210 20 240 20C270 20 290 26 320 26" stroke="#E63917" stroke-width="1.2" stroke-dasharray="3 1.5"/>
+                  </svg>
+                  <div class="flex justify-between text-[7px] font-technical text-[#7A7E77] mt-0.5">
+                    <span>20 HZ (SUB-BASS)</span>
+                    <span>432 HZ TUNING</span>
+                    <span>20 KHZ (ULTRASONIC)</span>
+                  </div>
+                </div>
+
+                <!-- Curatorial Subtitle -->
+                <p class="font-sans-clean text-[10px] font-medium text-[#484D46] leading-snug tracking-tight mb-4">
+                  International Forum for Spatial Acoustics, Modular Synthesis, Multichannel Diffusion &amp; Electroacoustic Research.
+                </p>
+
+                <!-- Full Performer Lineup Matrix (Asymmetrical 2-Column Grid) -->
+                <div class="grid grid-cols-2 gap-x-4 gap-y-2 border-t border-[#121413] pt-3 text-[9px] font-sans-clean">
+                  <div>
+                    <span class="text-[7px] font-technical text-[#E63917] block font-bold">FRIDAY 16.10 // MAIN HALL</span>
+                    <p class="font-bold text-[#121413] text-[10px]">CATERINA BARBIERI</p>
+                    <p class="text-[#4E534C]">Tim Hecker (Live 32ch Ambisonics)</p>
+                    <p class="text-[#4E534C]">Kali Malone feat. Stephen O'Malley</p>
+                    <p class="text-[#4E534C]">Actress x London Contemporary Orch</p>
+                  </div>
+                  <div>
+                    <span class="text-[7px] font-technical text-[#E63917] block font-bold">SATURDAY 17.10 // CONCRETE VAULT</span>
+                    <p class="font-bold text-[#121413] text-[10px]">ALESSANDRO CORTINI</p>
+                    <p class="text-[#4E534C]">Ryuichi Sakamoto Legacy Ensemble</p>
+                    <p class="text-[#4E534C]">Suzanne Ciani (Buchla Quadraphonic)</p>
+                    <p class="text-[#4E534C]">KMRU (Nairobi Field Transmissions)</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Bottom Venue & Ticket Bar -->
+              <div class="relative z-10 border-t-2 border-[#121413] pt-2 flex justify-between items-end text-[8px] font-technical text-[#5A5F58]">
+                <div>
+                  <span class="block font-bold text-[#121413]">KRAFTWERK KÖPENICKER STR. 70, BERLIN</span>
+                  <span>DOORS 18:00 CET // 3-DAY FESTIVAL PASS</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-bold text-[#E63917] block">WWW.RESONANS-BERLIN.DE</span>
+                  <span>TICKETS VIA RESIDENT ADVISOR</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Poster Design Specifications & Rationale -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#E63917]">POSTER 01 // EXPERIMENTAL MUSIC FESTIVAL</span>
+            <h3 class="font-editorial text-4xl text-[#FAF7F2]">RESONANS '26 Berlin</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Designed with severe Swiss typographic tension inspired by 1960s International Typographic posters and 1990s Berlin techno brutalism. Bold asymmetrical contrast balances the massive architectural logotype against microscopic audio telemetry data.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#29302B]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">TYPOGRAPHY</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Neue Haas Grotesk Bold + Space Mono</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRINT PROCESS</span>
+                <p class="text-xs font-semibold text-[#E63917]">2-Color Screenprint (Fluorescent Spot Red)</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">SUBSTRATE</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">250gsm Metapaper Rough Warm White</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">DIMENSIONS</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">594 × 841 mm (Standard DIN A1)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ==================== POSTER 02: SUPERSTRUCT / 04 ARCHITECTURE EXHIBITION ==================== -->
+        <div id="view-p2" class="hidden grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 flex justify-center py-6 bg-[#0E100F] rounded-xl border border-[#242925] relative">
+            <div class="absolute -top-3 flex justify-between w-64 z-20">
+              <div class="w-8 h-6 bg-[#333835] rounded-sm hanging-clip border border-[#484F4B] flex items-center justify-center">
+                <div class="w-4 h-2 bg-[#1A1C1A] rounded-xs"></div>
+              </div>
+              <div class="w-8 h-6 bg-[#333835] rounded-sm hanging-clip border border-[#484F4B] flex items-center justify-center">
+                <div class="w-4 h-2 bg-[#1A1C1A] rounded-xs"></div>
+              </div>
+            </div>
+
+            <!-- The A1 Poster Canvas (Dutch Minimalist / Architectural Cutout Style) -->
+            <div class="w-full max-w-[390px] aspect-a1 bg-[#EBE7DF] text-[#181B19] p-8 rounded-xs poster-gallery-shadow relative flex flex-col justify-between overflow-hidden border border-[#C5BFB3]">
+              
+              <div class="absolute inset-0 paper-texture-concrete opacity-80 pointer-events-none"></div>
+
+              <!-- Top Curatorial Accreditation -->
+              <div class="relative z-10 flex justify-between items-baseline border-b border-[#181B19]/25 pb-2 text-[8px] font-technical text-[#5A6058]">
+                <span>PAVILLON DE L'ARSENAL • PARIS</span>
+                <span class="text-[#BC7152] font-bold">EXHIBITION 04</span>
+                <span>14.11.2026 — 28.02.2027</span>
+              </div>
+
+              <!-- Center Architectural Spatial Cutout & Asymmetric Typography -->
+              <div class="relative z-10 my-auto py-3">
+                
+                <!-- Main Exhibition Title in Strict Dutch Grotesque -->
+                <span class="text-[9px] font-technical tracking-[0.3em] uppercase text-[#BC7152] block mb-1">ARCHITECTURAL RETROSPECTIVE</span>
+                <h3 class="font-sans-clean text-4xl sm:text-5xl font-black tracking-tight text-[#181B19] uppercase leading-[0.92]">
+                  SUPER<br>STRUCT
+                </h3>
+                <p class="font-editorial italic text-lg sm:text-xl text-[#60665D] mt-1 font-light">
+                  Form, Void &amp; Ecological Concrete: The Architecture of Subtraction
+                </p>
+
+                <!-- Architectural Concrete Monolith Vector with Negative Void Cutout -->
+                <div class="my-5 w-full h-36 bg-[#D8D2C5] border border-[#BDB6A8] rounded-xs relative overflow-hidden flex items-center justify-center">
+                  <!-- Concrete Section Shading -->
+                  <div class="absolute inset-0 bg-gradient-to-r from-[#181B19]/10 via-transparent to-[#181B19]/15"></div>
+                  <!-- Architectural Void (Pure Negative Geometry) -->
+                  <div class="w-24 h-24 bg-[#EBE7DF] border border-[#181B19] flex flex-col justify-between p-2 shadow-inner">
+                    <span class="text-[6px] font-technical text-[#8E948A]">VOID 01</span>
+                    <span class="text-[7px] font-technical text-center font-bold text-[#BC7152]">[ -48.2 M³ ]</span>
+                    <span class="text-[6px] font-technical text-right text-[#8E948A]">SCALE 1:50</span>
+                  </div>
+                  <!-- Architectural Elevation Lines -->
+                  <line x1="0" y1="18" x2="320" y2="18" stroke="#181B19" stroke-width="0.5" stroke-dasharray="4 2"/>
+                  <line x1="0" y1="126" x2="320" y2="126" stroke="#181B19" stroke-width="0.5" stroke-dasharray="4 2"/>
+                </div>
+
+                <!-- Curatorial Essay Paragraph (High-Density Swiss Micro-typography) -->
+                <div class="space-y-2 text-[9px] font-sans-clean text-[#4C5248] leading-relaxed">
+                  <p>
+                    SUPERSTRUCT investigates the contemporary imperative to build less by building heavier. Through the work of 14 European practices, the exhibition demonstrates how post-carbon structural stone, hemp-lime rammed earth, and cellular voiding techniques challenge the glass-curtain hegemony.
+                  </p>
+                  <p class="text-[8px] font-technical text-[#767C72]">
+                    FEATURING: LACATON &amp; VASSAL • VALERIO OLGIATI • FLORES &amp; PRATS • BRANDLHUBER+ • ATELIER BOW-WOW
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- Bottom Patronage & Visiting Hours -->
+              <div class="relative z-10 border-t border-[#181B19]/25 pt-3 grid grid-cols-3 gap-2 text-[8px] font-technical text-[#5E645A]">
+                <div>
+                  <span class="text-[#BC7152] block">HOURS:</span>
+                  <span>TUE–SUN 11:00–19:00</span>
+                </div>
+                <div>
+                  <span class="text-[#BC7152] block">ADMISSION:</span>
+                  <span>FREE ENTRY / RESERVATION</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[#BC7152] block">CURATORS:</span>
+                  <span>ETH ZÜRICH &amp; ARS PARIS</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Details & Rationale -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#BC7152]">POSTER 02 // ARCHITECTURE &amp; SPATIAL EXHIBITION</span>
+            <h3 class="font-editorial text-4xl text-[#FAF7F2]">SUPERSTRUCT / 04 Paris</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Rooted in Dutch modernist traditions (Wim Crouwel / Experimental Jetset). The poster explores physical subtraction—using negative white space and technical blueprint coordinates to reflect the architectural theme of ecological mass reduction.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#29302B]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">TYPOGRAPHY</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Helvetica Now + Cormorant Serif</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRINT FINISH</span>
+                <p class="text-xs font-semibold text-[#BC7152]">Offset + Blind Embossed Void Rectangle</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PAPER SUBSTRATE</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">300gsm G.F Smith Munken Lynx Uncoated</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">CURATORIAL SPONSOR</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Pavillon de l'Arsenal &amp; ETH Zürich</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ==================== POSTER 03: NORDIC LIGHT CINEMA RETROSPECTIVE ==================== -->
+        <div id="view-p3" class="hidden grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 flex justify-center py-6 bg-[#0E100F] rounded-xl border border-[#242925] relative">
+            <div class="absolute -top-3 flex justify-between w-64 z-20">
+              <div class="w-8 h-6 bg-[#333835] rounded-sm hanging-clip border border-[#484F4B] flex items-center justify-center">
+                <div class="w-4 h-2 bg-[#1A1C1A] rounded-xs"></div>
+              </div>
+              <div class="w-8 h-6 bg-[#333835] rounded-sm hanging-clip border border-[#484F4B] flex items-center justify-center">
+                <div class="w-4 h-2 bg-[#1A1C1A] rounded-xs"></div>
+              </div>
+            </div>
+
+            <!-- The A1 Poster Canvas (Nordic Cinema Chiaroscuro Style) -->
+            <div class="w-full max-w-[390px] aspect-a1 bg-[#101518] text-[#E8EDF0] p-8 rounded-xs poster-gallery-shadow relative flex flex-col justify-between overflow-hidden border border-[#273238]">
+              
+              <!-- Subtle Midnight Gradient & Film Grain -->
+              <div class="absolute inset-0 bg-gradient-to-b from-[#161D22] via-[#0F1418] to-[#0B0E10] opacity-90 pointer-events-none"></div>
+
+              <!-- Top 35mm Cinema Sprocket Bar -->
+              <div class="relative z-10 flex justify-between items-baseline border-b border-[#2D3940] pb-2 text-[8px] font-technical text-[#7C8B94]">
+                <span>CINEMATEKET STOCKHOLM</span>
+                <span class="text-[#5A92B8] font-bold">35MM RESTORATION SERIES</span>
+                <span>05–12 DEC 2026</span>
+              </div>
+
+              <!-- Center Cinematic Chiaroscuro Composition -->
+              <div class="relative z-10 my-auto py-2">
+                
+                <span class="text-[9px] font-technical tracking-[0.25em] text-[#5A92B8] uppercase block mb-1">FILM SYMPOSIUM &amp; ARCHIVE</span>
+                
+                <!-- Title in Elegant High-Contrast Didot / Editorial Serif -->
+                <h3 class="font-editorial text-4xl sm:text-5xl font-light tracking-wide text-[#FAF7F2] leading-[0.95]">
+                  NORDIC<br>
+                  <span class="italic font-normal text-[#C5D3DB]">L I G H T</span>
+                </h3>
+                
+                <p class="font-editorial italic text-xs sm:text-sm text-[#8899A3] mt-2 font-light">
+                  Solitude, Coastal Geographies &amp; The Architecture of Silence
+                </p>
+
+                <!-- Cinematic 2.39:1 Anamorphic Frame Graphic (Vector Silhouette in Winter Fog) -->
+                <div class="my-4 w-full h-32 bg-[#080B0D] border border-[#2D3940] rounded-xs relative overflow-hidden flex items-center justify-center">
+                  <!-- Cold Winter Fog Gradient -->
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#1C262C] via-[#0C1013] to-transparent opacity-80"></div>
+                  
+                  <!-- Solitary Figure on Coastal Horizon Vector -->
+                  <svg width="100%" height="100%" viewBox="0 0 280 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Low Horizon Line -->
+                    <line x1="0" y1="88" x2="280" y2="88" stroke="#313F47" stroke-width="1"/>
+                    <!-- Distant Lighthouse Beacon Ray -->
+                    <polygon points="210,50 280,30 280,70" fill="#5A92B8" fill-opacity="0.12"/>
+                    <circle cx="210" cy="50" r="2" fill="#FAF8F5"/>
+                    <rect x="209" y="52" width="2" height="36" fill="#1C242A"/>
+                    
+                    <!-- Solitary Dark Figure Silhouette -->
+                    <circle cx="85" cy="72" r="3" fill="#07090A"/>
+                    <path d="M82 75H88L90 88H80L82 75Z" fill="#07090A"/>
+                  </svg>
+
+                  <span class="absolute bottom-2 left-3 text-[7px] font-technical text-[#5A6973]">FIG. 03 — 35MM FRAME RATIO 2.39:1</span>
+                </div>
+
+                <!-- Film Directors Program Listing -->
+                <div class="grid grid-cols-2 gap-3 text-[8px] font-sans-clean text-[#99AAB3] pt-1 border-t border-[#232D33]">
+                  <div>
+                    <span class="text-[7px] font-technical text-[#5A92B8] block">BERGMAN &amp; NYKVIST</span>
+                    <p class="font-bold text-[#FAF7F2]">Winter Light (1963)</p>
+                    <p class="text-[#6D7D87]">Through a Glass Darkly (1961)</p>
+                  </div>
+                  <div>
+                    <span class="text-[7px] font-technical text-[#5A92B8] block">KAURISMÄKI &amp; DREYER</span>
+                    <p class="font-bold text-[#FAF7F2]">The Match Factory Girl (1990)</p>
+                    <p class="text-[#6D7D87]">Ordet (1955 / 4K DCP)</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Bottom Accreditation & Ticket Footer -->
+              <div class="relative z-10 border-t border-[#2D3940] pt-2 flex justify-between items-end text-[8px] font-technical text-[#6C7C85]">
+                <div>
+                  <span class="block text-[#FAF7F2] font-bold">SVENSKA FILMINSTITUTET</span>
+                  <span>BOX 27126, STOCKHOLM</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[#5A92B8] block">PASSES: SEK 450</span>
+                  <span>WWW.CINEMATEKET.SE</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Details & Rationale -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-technical uppercase text-[#5A92B8]">POSTER 03 // CULTURAL FILM SYMPOSIUM</span>
+            <h3 class="font-editorial text-4xl text-[#FAF7F2]">NORDIC LIGHT Stockholm</h3>
+            <p class="text-sm text-[#9FA49E] leading-relaxed">
+              Designed with poetic cinematic restraint. Combines 35mm film aspect ratios with razor-sharp Didot transitional serifs and cool oceanic duotone printing to mirror the stark psychological landscapes of Ingmar Bergman and Sven Nykvist.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#29302B]">
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">TYPOGRAPHY</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Didot Headline + Space Mono</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRINT EMBELLISHMENT</span>
+                <p class="text-xs font-semibold text-[#5A92B8]">Silver Metallic Foil Lettering</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PAPER SUBSTRATE</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">270gsm Fedrigoni Sirio Dark Blue</p>
+              </div>
+              <div>
+                <span class="block text-[10px] font-technical uppercase text-[#8A8F8A]">PRESENTED BY</span>
+                <p class="text-xs font-semibold text-[#FAF7F2]">Svenska Filminstitutet &amp; Cinemateket</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: GRID ANATOMY & COMPARISON -->
+  <section id="grid-system" class="py-24 px-6 md:px-16 border-b border-[#242825] bg-[#141615]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#242825]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#E63917] block mb-2">SYSTEM ARCHITECTURE</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">Underlying Modular Grids</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">MATHEMATICAL PROPORTIONS &amp; BASELINE DISCIPLINE</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2A302C]">
+          <span class="text-xs font-technical text-[#E63917] block mb-2">POSTER 01 / RESONANS</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-3">12-Column Brutalist Grid</h4>
+          <p class="text-xs text-[#9DA29C] leading-relaxed mb-4">
+            Employs a dense 12-column Swiss system with asymmetric 7:5 proportional balance. High-density text bands run strictly on a 4pt baseline grid to maintain optical alignment across multi-tier performer listings.
+          </p>
+          <div class="text-[10px] font-technical text-[#8A8F8A] pt-3 border-t border-[#262C28]">
+            KEY RATIO: 7:5 Split // 12pt Gutters
+          </div>
+        </div>
+
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2A302C]">
+          <span class="text-xs font-technical text-[#BC7152] block mb-2">POSTER 02 / SUPERSTRUCT</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-3">Modular Void &amp; Coordinate Grid</h4>
+          <p class="text-xs text-[#9DA29C] leading-relaxed mb-4">
+            Constructed with a central spatial cut-out mathematically pegged to the golden ratio ($1:1.618$). Architectural registration marks denote physical margins ($25\text{mm}$ safety perimeter).
+          </p>
+          <div class="text-[10px] font-technical text-[#8A8F8A] pt-3 border-t border-[#262C28]">
+            KEY RATIO: Golden Section ($1:1.618$)
+          </div>
+        </div>
+
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2A302C]">
+          <span class="text-xs font-technical text-[#5A92B8] block mb-2">POSTER 03 / NORDIC LIGHT</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-3">Anamorphic Film Ratio Frame</h4>
+          <p class="text-xs text-[#9DA29C] leading-relaxed mb-4">
+            Centers an exact $2.39:1$ widescreen theatrical ratio window within the $1:1.414$ vertical A1 canvas. Text sits within generous upper and lower borders to mirror vintage European cinema programs.
+          </p>
+          <div class="text-[10px] font-technical text-[#8A8F8A] pt-3 border-t border-[#262C28]">
+            KEY RATIO: $2.39:1$ Anamorphic
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: PRINT FINISHES & PRODUCTION SPECS -->
+  <section id="print-specs" class="py-24 px-6 md:px-16 border-b border-[#242825] bg-[#111312]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#242825]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#E63917] block mb-2">MANUFACTURING DETAIL</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">Print Production Specifications</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">HANDCRAFTED ATELIER REPRODUCTIONS</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 bg-[#161917] rounded-xl border border-[#29302B]">
+          <span class="text-[10px] font-technical text-[#E63917] uppercase block mb-1">SPOT SILKSCREEN INK</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Fluorescent Vermilion</h4>
+          <p class="text-xs text-[#9DA29C] leading-relaxed">
+            Formulated using day-glo pigment with high UV-reflectance. Screen-printed via 120T mesh over a dense opaque white underbase for extreme chromatic brilliance under low gallery lighting.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#161917] rounded-xl border border-[#29302B]">
+          <span class="text-[10px] font-technical text-[#BC7152] uppercase block mb-1">SCULPTURAL EMBOSSING</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Blind Multi-Level Die</h4>
+          <p class="text-xs text-[#9DA29C] leading-relaxed">
+            CNC-milled brass die pressed into 300gsm G.F Smith Munken board under 40 tons of pressure, creating a permanent 1.2mm tactile depression with zero ink or discoloration.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#161917] rounded-xl border border-[#29302B]">
+          <span class="text-[10px] font-technical text-[#5A92B8] uppercase block mb-1">HOT FOIL STAMPING</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Matte Platinum Silver</h4>
+          <p class="text-xs text-[#9DA29C] leading-relaxed">
+            Kurz Luxor matte metallic foil stamped at 130°C onto dark oceanic board. Produces a non-glossy, mercury-like liquid sheen that catches ambient directional gallery lighting.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO FOOTER -->
+  <footer class="py-16 px-6 md:px-16 bg-[#0B0D0C] border-t border-[#242825]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-xs font-technical text-[#7A8078]">
+      <div>
+        <p class="text-[#FAF7F2] font-editorial text-2xl">STUDIO MØRK // POSTER ARCHIVE</p>
+        <p class="mt-1">TYPOGRAPHIC POSTER DESIGN &amp; CULTURAL ART DIRECTION</p>
+      </div>
+      <div class="mt-6 md:mt-0 text-right">
+        <p>© 2026 POSTER PORTFOLIO SPECIFICATION. DESIGNED FOR CULTURAL INSTITUTIONS.</p>
+        <p class="mt-0.5 text-[#E63917]">HANDCRAFTED TYPOGRAPHIC EXECUTION // ZERO AI GENERATION</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT FOR POSTER SWITCHING -->
+  <script>
+    function switchPoster(id) {
+      const views = ['p1', 'p2', 'p3'];
+      views.forEach(v => {
+        const el = document.getElementById('view-' + v);
+        const btn = document.getElementById('btn-' + v);
+        if (v === id) {
+          el.classList.remove('hidden');
+          el.classList.add('grid');
+          btn.classList.add('active', 'text-[#FAF8F5]', 'bg-[#1C1F1D]');
+          btn.classList.remove('text-[#9EA49B]');
+        } else {
+          el.classList.add('hidden');
+          el.classList.remove('grid');
+          btn.classList.remove('active', 'text-[#FAF8F5]', 'bg-[#1C1F1D]');
+          btn.classList.add('text-[#9EA49B]');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

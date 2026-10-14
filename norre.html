@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NØRRE ARCHIVE — AW26 Social Campaign & Art Direction Portfolio</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --serif: 'Didot', 'Bodoni MT', 'Cinzel', 'Playfair Display', Georgia, serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      --mono: 'SF Mono', Consolas, 'Courier New', monospace;
+    }
+
+    .font-editorial { font-family: var(--serif); }
+    .font-sans-clean { font-family: var(--sans); }
+    .font-technical { font-family: var(--mono); }
+
+    /* Post Aspect Ratio: 4:5 Instagram Standard Portrait (1080 x 1350) */
+    .aspect-ig {
+      aspect-ratio: 4 / 5;
+    }
+
+    /* Subtle grain and textile textures */
+    .twill-pattern {
+      background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 4px);
+    }
+
+    .wool-texture {
+      background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 0);
+      background-size: 4px 4px;
+    }
+
+    .concrete-grain {
+      background-color: #D6D3CD;
+      background-image: radial-gradient(#bab5ad 0.75px, transparent 0.75px), radial-gradient(#bab5ad 0.75px, #D6D3CD 0.75px);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+    }
+
+    .post-shadow {
+      box-shadow: 0 20px 40px -15px rgba(18, 20, 19, 0.2);
+    }
+
+    /* Filter active state */
+    .filter-btn.active {
+      background-color: #1A1D1B;
+      color: #F5F3EF;
+      border-color: #1A1D1B;
+    }
+  </style>
+</head>
+<body class="bg-[#101211] text-[#E5E2DC] font-sans-clean antialiased selection:bg-[#9E5D38] selection:text-white">
+
+  <!-- TOP HEADER / STUDIO NAVIGATION -->
+  <header class="border-b border-[#252926] bg-[#101211]/90 backdrop-blur sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <span class="text-xs tracking-[0.25em] uppercase font-technical text-[#8A8F8A]">CAMPAIGN PORTFOLIO // 2026</span>
+        <span class="text-[#363B37]">•</span>
+        <span class="text-xs tracking-wider uppercase font-sans-clean text-[#CEC9BE]">STUDIO MØRK x NØRRE ARCHIVE</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#campaign-overview" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Brief</a>
+        <a href="#grid-view" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">The 6 Posts</a>
+        <a href="#design-system" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Art Direction</a>
+        <a href="#marketing-strategy" class="text-xs uppercase tracking-widest text-[#9A9E98] hover:text-white transition">Marketing Logic</a>
+        <span class="px-2.5 py-1 text-[11px] font-technical uppercase border border-[#9E5D38]/50 text-[#BC7152] rounded-full">Editorial Feed</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: THE CAMPAIGN BRIEF -->
+  <section id="campaign-overview" class="py-20 px-6 md:px-16 border-b border-[#252926] bg-gradient-to-b from-[#141715] to-[#101211]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between border-b border-[#252926] pb-10 mb-12">
+        <div class="max-w-3xl">
+          <p class="text-xs font-technical text-[#BC7152] uppercase tracking-[0.3em] mb-3">AUTUMN / WINTER 2026 CAPSULE CAMPAIGN</p>
+          <h1 class="font-editorial text-5xl md:text-7xl lg:text-8xl tracking-tight text-[#FAF7F2] leading-[0.95]">
+            NØRRE ARCHIVE
+          </h1>
+          <p class="font-editorial italic text-2xl md:text-3xl text-[#9E9B93] mt-3 font-light">
+            Collection 07: "Forms in Concrete &amp; Wool"
+          </p>
+        </div>
+        
+        <div class="mt-8 lg:mt-0 text-left lg:text-right max-w-sm">
+          <span class="text-[10px] font-technical uppercase tracking-widest text-[#8A8F8A] block mb-1">CLIENT CATEGORY</span>
+          <p class="text-sm text-[#DED9CD] font-medium">Contemporary Unisex Tailoring &amp; Heavy Gauge Knitwear</p>
+          <p class="text-xs text-[#868C86] mt-2 font-technical">CAMPAIGN GOAL: +38% DTC SELL-THROUGH // ZERO PROMOTIONAL CLUTTER</p>
+        </div>
+      </div>
+
+      <!-- THREE CORE PILLARS OF THE SOCIAL STRATEGY -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+        
+        <div class="p-6 bg-[#161917] rounded-xl border border-[#272C28]">
+          <span class="text-xs font-technical text-[#BC7152] block mb-2">STRATEGY 01 / EDITORIAL POISE</span>
+          <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Restraint Over Hype</h3>
+          <p class="text-xs text-[#9B9F98] leading-relaxed">
+            Eliminating cheap promotional banners, "swipe-up" stickers, and loud urgency badges. Instead, utilizing high-end editorial crops, generous borders, and quiet Swiss typography that treats the audience as discerning connoisseurs.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#161917] rounded-xl border border-[#272C28]">
+          <span class="text-xs font-technical text-[#BC7152] block mb-2">STRATEGY 02 / 4:5 VERTICAL DISCIPLINE</span>
+          <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Viewport Dominance</h3>
+          <p class="text-xs text-[#9B9F98] leading-relaxed">
+            Standardizing every post on a 4:5 portrait ratio (1080×1350px). This maximizes mobile viewport real estate, slowing down feed-scrolling speeds by 2.4× compared to standard square 1:1 posts.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#161917] rounded-xl border border-[#272C28]">
+          <span class="text-xs font-technical text-[#BC7152] block mb-2">STRATEGY 03 / TACTILE VALUE JUSTIFICATION</span>
+          <h3 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Visible Craftsmanship</h3>
+          <p class="text-xs text-[#9B9F98] leading-relaxed">
+            Every carousel and static post balances high-level silhouette art direction with extreme macro fiber details (680gsm British lambswool, horn hardware, hand-stitched bar tacks) to justify premium £420–£890 price points.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: THE 6 INSTAGRAM CAMPAIGN POSTS -->
+  <section id="grid-view" class="py-24 px-6 md:px-16 border-b border-[#252926] bg-[#121413]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#252926]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">CAMPAIGN DELIVERABLES</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">The 6-Post Campaign Matrix</h2>
+          <p class="text-xs text-[#8A8F8A] mt-2 font-technical">FORMAT: 1080 × 1350 (4:5 RATIO) // DESIGNED FOR CONTEMPORARY EDITORIAL FEED</p>
+        </div>
+        <div class="mt-4 md:mt-0 flex gap-2">
+          <span class="text-xs font-technical text-[#8A8F8A] self-center mr-2">CLICK POST TO INSPECT STRATEGY</span>
+        </div>
+      </div>
+
+      <!-- THE 6 INSTAGRAM POSTS (GRID: 3 COLUMNS ON DESKTOP, 2 ON TABLET, 1 ON MOBILE) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- ==================== POST 01: HERO SEASONAL CAMPAIGN LAUNCH ==================== -->
+        <div onclick="openInspector(1)" class="group cursor-pointer flex flex-col">
+          <!-- The Instagram Frame (4:5 Ratio) -->
+          <div class="aspect-ig bg-[#E5E1D8] text-[#161816] rounded-xl overflow-hidden post-shadow border border-[#303632] group-hover:border-[#BC7152] transition duration-300 relative flex flex-col justify-between p-7">
+            
+            <!-- Top Framing Bar -->
+            <div class="flex items-center justify-between border-b border-[#161816]/20 pb-3">
+              <span class="text-[9px] font-technical uppercase tracking-[0.3em] text-[#555953]">COLLECTION 07</span>
+              <span class="text-[9px] font-technical text-[#555953]">EDITION 250</span>
+            </div>
+
+            <!-- Visual Art Direction (Architectural Silhouette & Oversized Overcoat) -->
+            <div class="my-auto py-2 relative flex flex-col items-center justify-center">
+              <!-- Architectural Brutalist Concrete Frame Representation -->
+              <div class="w-full h-64 bg-[#D1CCC2] rounded flex items-center justify-center relative overflow-hidden concrete-grain border border-[#BCB6AA]">
+                <!-- Concrete Shadow Cast -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-[#9C968B]/40 to-transparent"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-24 bg-[#B5AFA4]/50 transform skew-x-12 origin-top"></div>
+                
+                <!-- Stylized Model Silhouette in Charcoal Melange Overcoat (Pure Vector Art Direction) -->
+                <svg width="170" height="240" viewBox="0 0 170 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative z-10 drop-shadow-xl">
+                  <!-- Head & Clean Contour -->
+                  <circle cx="85" cy="22" r="10" fill="#202220"/>
+                  <!-- Clean Architectural Neck -->
+                  <rect x="82" y="32" width="6" height="8" fill="#202220"/>
+                  <!-- Structured Shoulders & Heavy Coat Body -->
+                  <path d="M48 42L85 38L122 42L132 195H38L48 42Z" fill="#1C1E1C"/>
+                  <!-- Coat Lapel Lines & Real Tailoring Geometry -->
+                  <path d="M85 38L72 85L85 110L98 85L85 38Z" fill="#2B2F2C"/>
+                  <line x1="85" y1="110" x2="85" y2="195" stroke="#121412" stroke-width="1.5"/>
+                  <!-- Deep Inset Pockets -->
+                  <line x1="56" y1="125" x2="72" y2="128" stroke="#121412" stroke-width="1.2"/>
+                  <line x1="114" y1="125" x2="98" y2="128" stroke="#121412" stroke-width="1.2"/>
+                  <!-- Wide Trouser Stems -->
+                  <rect x="62" y="195" width="18" height="38" fill="#2A2E2C"/>
+                  <rect x="90" y="195" width="18" height="38" fill="#2A2E2C"/>
+                  <!-- Minimal Square-toe Boots -->
+                  <rect x="58" y="233" width="22" height="6" rx="1" fill="#101110"/>
+                  <rect x="90" y="233" width="22" height="6" rx="1" fill="#101110"/>
+                </svg>
+
+                <!-- Architectural Scale Callout -->
+                <span class="absolute bottom-2 left-3 text-[8px] font-technical text-[#5F635C]">FIG. 01 — BRUTALIST ELEVATION</span>
+              </div>
+            </div>
+
+            <!-- Bottom Editorial Typographic Lockup -->
+            <div class="border-t border-[#161816]/20 pt-4">
+              <div class="flex justify-between items-baseline mb-1">
+                <h3 class="font-editorial text-2xl tracking-wider text-[#161816] font-medium">NØRRE ARCHIVE</h3>
+                <span class="text-[9px] font-technical uppercase tracking-widest text-[#72776E]">ONLINE 24.10</span>
+              </div>
+              <p class="font-sans-clean text-[11px] text-[#4F544D] tracking-tight">
+                Collection 07 explores the structural equilibrium between British heavy-gauge wool and raw concrete forms.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Post Metadata & Rationale -->
+          <div class="mt-4 flex items-center justify-between text-xs">
+            <span class="font-technical text-[#BC7152]">POST 01 // CAMPAIGN HERO</span>
+            <span class="text-[#8A8F8A] font-technical">THE HOOK (AWARENESS)</span>
+          </div>
+          <p class="text-xs text-[#9FA39C] mt-1">Full-length silhouette establishing the campaign's severe architectural tone.</p>
+        </div>
+
+        <!-- ==================== POST 02: TYPOGRAPHY-LED MANIFESTO & DROP ==================== -->
+        <div onclick="openInspector(2)" class="group cursor-pointer flex flex-col">
+          <!-- The Instagram Frame (4:5 Ratio) -->
+          <div class="aspect-ig bg-[#161917] text-[#FAF7F2] rounded-xl overflow-hidden post-shadow border border-[#303632] group-hover:border-[#BC7152] transition duration-300 relative flex flex-col justify-between p-8">
+            
+            <!-- Top Metric Bar -->
+            <div class="flex justify-between items-start border-b border-[#2C322E] pb-4">
+              <div>
+                <span class="text-[9px] font-technical text-[#BC7152] block">DISPATCH NO. 078</span>
+                <span class="text-xs font-editorial tracking-widest text-[#FAF7F2]">NØRRE MANIFESTO</span>
+              </div>
+              <div class="text-right">
+                <span class="text-[9px] font-technical text-[#8A8F8A]">48.52° N / 9.05° E</span>
+              </div>
+            </div>
+
+            <!-- Central Typographic Statement (Pure Editorial Rhythm) -->
+            <div class="my-auto space-y-6">
+              <span class="text-[10px] font-technical uppercase tracking-[0.25em] text-[#BC7152] block">CORE THESIS</span>
+              <h2 class="font-editorial text-3xl sm:text-4xl leading-[1.15] text-[#FAF7F2]">
+                "A coat should not merely cover the body; it must construct a sanctuary."
+              </h2>
+              <div class="w-12 h-[1px] bg-[#BC7152]"></div>
+              <p class="font-sans-clean text-xs text-[#A8AEA3] leading-relaxed pr-4">
+                Structured tailoring cut from 680gsm unbleached Yorkshire wool. Devoid of polyester padding, shoulder canvases, or synthetic sheen.
+              </p>
+            </div>
+
+            <!-- Bottom Release Matrix Grid -->
+            <div class="border-t border-[#2C322E] pt-4 grid grid-cols-3 gap-2 text-[9px] font-technical text-[#8E948A]">
+              <div>
+                <span class="text-[#BC7152] block">DATE:</span>
+                <span>24 OCT 2026</span>
+              </div>
+              <div>
+                <span class="text-[#BC7152] block">TIME:</span>
+                <span>10:00 CET</span>
+              </div>
+              <div>
+                <span class="text-[#BC7152] block">RUN:</span>
+                <span>STRICTLY 250</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Post Metadata & Rationale -->
+          <div class="mt-4 flex items-center justify-between text-xs">
+            <span class="font-technical text-[#BC7152]">POST 02 // TYPOGRAPHY POSTER</span>
+            <span class="text-[#8A8F8A] font-technical">THE VALUES (AUTHORITY)</span>
+          </div>
+          <p class="text-xs text-[#9FA39C] mt-1">Pure Swiss layout that halts the feed with calm intellectual confidence.</p>
+        </div>
+
+        <!-- ==================== POST 03: PRODUCT PROMOTION / TAILORED TROUSER ==================== -->
+        <div onclick="openInspector(3)" class="group cursor-pointer flex flex-col">
+          <!-- The Instagram Frame (4:5 Ratio) -->
+          <div class="aspect-ig bg-[#F2EFE9] text-[#181B18] rounded-xl overflow-hidden post-shadow border border-[#303632] group-hover:border-[#BC7152] transition duration-300 relative flex flex-col justify-between p-7">
+            
+            <!-- Top Product Index Header -->
+            <div class="flex justify-between items-baseline border-b border-[#181B18]/15 pb-3">
+              <span class="text-[9px] font-technical text-[#BC7152] tracking-wider uppercase">PRODUCT FOCUS // 01</span>
+              <span class="text-[9px] font-technical text-[#6C7169]">SKU: NR-TR-07</span>
+            </div>
+
+            <!-- Middle Garment Showcase (Tailored Pleated Trouser Vector Illustration) -->
+            <div class="my-auto py-2 relative flex flex-col items-center">
+              <div class="w-full h-64 bg-[#E2DED4] rounded flex items-center justify-center relative overflow-hidden border border-[#D1CCC0] twill-pattern">
+                
+                <!-- Vector Illustration of Structured Wide-Leg Trouser with Deep Front Pleats -->
+                <svg width="180" height="230" viewBox="0 0 180 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Trouser Waistband -->
+                  <path d="M40 25H140V42H40V25Z" fill="#242825"/>
+                  <!-- Horn Buckle Side Adjuster -->
+                  <rect x="36" y="28" width="8" height="10" rx="1" fill="#755038"/>
+                  <rect x="136" y="28" width="8" height="10" rx="1" fill="#755038"/>
+                  
+                  <!-- Left Leg with Deep Front Pleat -->
+                  <path d="M40 42L25 210H86L90 70L40 42Z" fill="#1C1E1B"/>
+                  <line x1="56" y1="42" x2="48" y2="210" stroke="#2B302C" stroke-width="1.5"/>
+                  
+                  <!-- Right Leg with Deep Front Pleat -->
+                  <path d="M140 42L155 210H94L90 70L140 42Z" fill="#181A18"/>
+                  <line x1="124" y1="42" x2="132" y2="210" stroke="#2B302C" stroke-width="1.5"/>
+                  
+                  <!-- Clean Cuffed Hemline Details -->
+                  <line x1="25" y1="195" x2="86" y2="195" stroke="#121312" stroke-width="1"/>
+                  <line x1="94" y1="195" x2="155" y2="195" stroke="#121312" stroke-width="1"/>
+                  
+                  <!-- Inset Coin Pocket Detail -->
+                  <rect x="62" y="34" width="20" height="2" fill="#3D423E"/>
+                </svg>
+
+                <!-- Floating Spec Badge -->
+                <div class="absolute top-3 left-3 bg-[#181B18]/90 text-white px-2 py-1 rounded text-[8px] font-technical uppercase tracking-wider backdrop-blur">
+                  ITALIAN RAW WOOL TWILL
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Product Specifications and Clear Price Point -->
+            <div class="border-t border-[#181B18]/15 pt-3">
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-editorial text-xl text-[#181B18] font-medium">The Brancusi Wide Trouser</h4>
+                <span class="text-xs font-technical font-semibold text-[#181B18]">£385</span>
+              </div>
+              <div class="flex justify-between items-center text-[10px] font-technical text-[#5E645A] mt-2">
+                <span>CUT: DOUBLE-PLEATED ARCHITECTURAL FIT</span>
+                <span class="text-[#BC7152]">ONLINE EXCLUSIVE</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Post Metadata & Rationale -->
+          <div class="mt-4 flex items-center justify-between text-xs">
+            <span class="font-technical text-[#BC7152]">POST 03 // PRODUCT FOCUS</span>
+            <span class="text-[#8A8F8A] font-technical">THE CONSIDERATION (DESIRE)</span>
+          </div>
+          <p class="text-xs text-[#9FA39C] mt-1">Specific silhouette presentation with upfront price and material provenance.</p>
+        </div>
+
+        <!-- ==================== POST 04: MACRO DETAIL & CRAFTSMANSHIP ==================== -->
+        <div onclick="openInspector(4)" class="group cursor-pointer flex flex-col">
+          <!-- The Instagram Frame (4:5 Ratio) -->
+          <div class="aspect-ig bg-[#1E221F] text-[#FAF7F2] rounded-xl overflow-hidden post-shadow border border-[#303632] group-hover:border-[#BC7152] transition duration-300 relative flex flex-col justify-between p-7">
+            
+            <!-- Top Framing Bar -->
+            <div class="flex justify-between items-baseline border-b border-[#2F3631] pb-3">
+              <span class="text-[9px] font-technical uppercase tracking-[0.25em] text-[#BC7152]">04 // TACTILE MACRO STUDY</span>
+              <span class="text-[9px] font-technical text-[#8A8F8A]">400X OPTICAL PROOF</span>
+            </div>
+
+            <!-- Central Macro Fiber Composition (Realistic Knit & Horn Button Texture) -->
+            <div class="my-auto py-2 relative flex flex-col items-center justify-center">
+              <div class="w-full h-64 bg-[#141614] rounded flex items-center justify-center relative overflow-hidden border border-[#2D332E]">
+                
+                <!-- Wool Weave Background Texture -->
+                <div class="absolute inset-0 wool-texture opacity-60"></div>
+                
+                <!-- Heavy Rib Knit Texture Bands -->
+                <div class="w-full h-full flex flex-col justify-around py-4 opacity-40">
+                  <div class="h-4 bg-gradient-to-r from-[#2B302B] via-[#484F48] to-[#2B302B]"></div>
+                  <div class="h-4 bg-gradient-to-r from-[#2B302B] via-[#484F48] to-[#2B302B]"></div>
+                  <div class="h-4 bg-gradient-to-r from-[#2B302B] via-[#484F48] to-[#2B302B]"></div>
+                  <div class="h-4 bg-gradient-to-r from-[#2B302B] via-[#484F48] to-[#2B302B]"></div>
+                  <div class="h-4 bg-gradient-to-r from-[#2B302B] via-[#484F48] to-[#2B302B]"></div>
+                </div>
+
+                <!-- Macro Genuine Natural Horn Button Vector with Contrast Thread -->
+                <div class="relative z-10 w-28 h-28 rounded-full border-2 border-[#544336] bg-gradient-to-br from-[#45372C] via-[#614B3B] to-[#2B211A] shadow-2xl flex items-center justify-center">
+                  <!-- Horn Organic Mottled Grain Effect -->
+                  <div class="absolute w-20 h-20 rounded-full border border-[#8C6D56]/30"></div>
+                  <!-- Button 4-Hole Matrix -->
+                  <div class="grid grid-cols-2 gap-3 z-10">
+                    <div class="w-3 h-3 rounded-full bg-[#181310] border border-[#785F4D] flex items-center justify-center">
+                      <div class="w-1.5 h-0.5 bg-[#FAF7F2] transform rotate-45"></div>
+                    </div>
+                    <div class="w-3 h-3 rounded-full bg-[#181310] border border-[#785F4D] flex items-center justify-center">
+                      <div class="w-1.5 h-0.5 bg-[#FAF7F2] transform -rotate-45"></div>
+                    </div>
+                    <div class="w-3 h-3 rounded-full bg-[#181310] border border-[#785F4D] flex items-center justify-center">
+                      <div class="w-1.5 h-0.5 bg-[#FAF7F2] transform -rotate-45"></div>
+                    </div>
+                    <div class="w-3 h-3 rounded-full bg-[#181310] border border-[#785F4D] flex items-center justify-center">
+                      <div class="w-1.5 h-0.5 bg-[#FAF7F2] transform rotate-45"></div>
+                    </div>
+                  </div>
+                  <!-- Rim Chamfer -->
+                  <div class="absolute inset-1 rounded-full border border-black/40"></div>
+                </div>
+
+                <!-- Technical Fiber Spec Label -->
+                <div class="absolute bottom-3 right-3 bg-[#111311]/90 text-[#D0CDC6] text-[8px] font-technical px-2.5 py-1 rounded border border-[#2D332E]">
+                  MATTE HORN • UNBLEACHED FIBER
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Craftsmanship Description -->
+            <div class="border-t border-[#2F3631] pt-3">
+              <div class="flex justify-between items-baseline mb-1">
+                <h4 class="font-editorial text-xl text-[#FAF7F2]">Shetland Carded Wool</h4>
+                <span class="text-[9px] font-technical text-[#BC7152]">680 GSM WEIGHT</span>
+              </div>
+              <p class="font-sans-clean text-[11px] text-[#A6ABA0] leading-snug">
+                Custom milled in Hawick, Scotland. Spun with natural lanolin retention for organic water resistance and lifelong structural form.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Post Metadata & Rationale -->
+          <div class="mt-4 flex items-center justify-between text-xs">
+            <span class="font-technical text-[#BC7152]">POST 04 // DETAIL STUDY</span>
+            <span class="text-[#8A8F8A] font-technical">THE VALIDATION (JUSTIFICATION)</span>
+          </div>
+          <p class="text-xs text-[#9FA39C] mt-1">Proof of manufacturing rigor that eliminates buyer hesitation on premium pricing.</p>
+        </div>
+
+        <!-- ==================== POST 05: STILL LIFE EDITORIAL / ACCESSORY ==================== -->
+        <div onclick="openInspector(5)" class="group cursor-pointer flex flex-col">
+          <!-- The Instagram Frame (4:5 Ratio) -->
+          <div class="aspect-ig bg-[#EBE7DF] text-[#161816] rounded-xl overflow-hidden post-shadow border border-[#303632] group-hover:border-[#BC7152] transition duration-300 relative flex flex-col justify-between p-7">
+            
+            <!-- Top Framing Bar -->
+            <div class="flex justify-between items-baseline border-b border-[#161816]/15 pb-3">
+              <span class="text-[9px] font-technical text-[#555A52] tracking-widest uppercase">OBJECTS // FORM STUDY</span>
+              <span class="text-[9px] font-technical text-[#555A52]">STOCKHOLM ATELIER</span>
+            </div>
+
+            <!-- Still Life Composition (Structured Leather Tote on Travertine Block) -->
+            <div class="my-auto py-2 relative flex flex-col items-center">
+              <div class="w-full h-64 bg-[#DCD7CD] rounded flex items-center justify-center relative overflow-hidden border border-[#C5BFB3]">
+                <!-- Cast Sunlight Shadow Angle -->
+                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-[#C2BCB0]/40 to-[#A69F91]/70"></div>
+                
+                <!-- Travertine Stone Plinth Vector -->
+                <div class="absolute bottom-4 w-48 h-12 bg-[#B8B1A2] rounded-sm transform skew-x-6 border border-[#A19A8A] shadow-lg"></div>
+
+                <!-- Box-Calf Minimalist Leather Tote Vector -->
+                <svg width="150" height="170" viewBox="0 0 150 170" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative z-10 drop-shadow-2xl">
+                  <!-- Leather Handles -->
+                  <path d="M50 55C50 20 60 12 75 12C90 12 100 20 100 55" stroke="#121312" stroke-width="4" stroke-linecap="round"/>
+                  <!-- Main Structured Bag Body -->
+                  <path d="M30 55H120L115 155H35L30 55Z" fill="#1C1E1B"/>
+                  <!-- Leather Beveled Seam Details -->
+                  <line x1="38" y1="55" x2="42" y2="155" stroke="#2B2F2C" stroke-width="1.2"/>
+                  <line x1="112" y1="55" x2="108" y2="155" stroke="#2B2F2C" stroke-width="1.2"/>
+                  <!-- Micro Blind Embossed Gold Foil Stamp Logo -->
+                  <rect x="68" y="95" width="14" height="2" fill="#C89D66"/>
+                  <!-- Leather Reflection Sheen -->
+                  <path d="M35 58L42 150" stroke="white" stroke-width="1" stroke-opacity="0.15"/>
+                </svg>
+
+                <span class="absolute top-3 right-3 text-[8px] font-technical text-[#6C7168]">ATELIER OBJECT 03</span>
+              </div>
+            </div>
+
+            <!-- Bottom Editorial Text -->
+            <div class="border-t border-[#161816]/15 pt-3">
+              <div class="flex justify-between items-baseline mb-1">
+                <h4 class="font-editorial text-xl text-[#161816] font-medium">The Monolith Box Tote</h4>
+                <span class="text-xs font-technical font-semibold text-[#161816]">£520</span>
+              </div>
+              <p class="font-sans-clean text-[11px] text-[#4F544D] leading-snug">
+                Cut from untreated Tuscan vegetable-tanned bridle leather. Designed to patina with exposure to daylight and wear.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Post Metadata & Rationale -->
+          <div class="mt-4 flex items-center justify-between text-xs">
+            <span class="font-technical text-[#BC7152]">POST 05 // STILL LIFE</span>
+            <span class="text-[#8A8F8A] font-technical">THE DESIRABILITY (LIFESTYLE)</span>
+          </div>
+          <p class="text-xs text-[#9FA39C] mt-1">A breathing room visual that elevates the brand into a design institution.</p>
+        </div>
+
+        <!-- ==================== POST 06: CONVERSION / PRIVATE CLIENT ACCESS ==================== -->
+        <div onclick="openInspector(6)" class="group cursor-pointer flex flex-col">
+          <!-- The Instagram Frame (4:5 Ratio) -->
+          <div class="aspect-ig bg-[#141615] text-[#FAF7F2] rounded-xl overflow-hidden post-shadow border border-[#303632] group-hover:border-[#BC7152] transition duration-300 relative flex flex-col justify-between p-7">
+            
+            <!-- Top Framing Bar -->
+            <div class="flex justify-between items-baseline border-b border-[#2C322E] pb-3">
+              <span class="text-[9px] font-technical text-[#BC7152] uppercase tracking-[0.25em]">PRIVATE CLIENT PASS</span>
+              <span class="text-[9px] font-technical text-[#8A8F8A]">48H WINDOW</span>
+            </div>
+
+            <!-- Central Editorial Diptych Layout (Lookbook Candid + Formal Pass) -->
+            <div class="my-auto py-2 relative flex flex-col items-center">
+              <div class="w-full h-64 bg-[#1B1E1C] rounded flex flex-col justify-between p-5 relative overflow-hidden border border-[#2F3530]">
+                
+                <div class="flex justify-between items-start">
+                  <div>
+                    <span class="text-[8px] font-technical text-[#BC7152] block">INVITATION // AW26</span>
+                    <h3 class="font-editorial text-2xl text-[#FAF7F2] mt-1">Early Access Archive</h3>
+                  </div>
+                  <!-- Secure Ticket Pass QR Graphic -->
+                  <div class="w-10 h-10 border border-[#FAF7F2]/40 p-1 flex items-center justify-center bg-[#101211]">
+                    <div class="w-full h-full bg-[#FAF7F2] grid grid-cols-3 gap-0.5 p-0.5">
+                      <div class="bg-black"></div><div class="bg-white"></div><div class="bg-black"></div>
+                      <div class="bg-white"></div><div class="bg-black"></div><div class="bg-white"></div>
+                      <div class="bg-black"></div><div class="bg-white"></div><div class="bg-black"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Swiss Data Table for Capsule Delivery -->
+                <div class="space-y-1.5 py-3 border-y border-[#2D332E] text-[9px] font-technical text-[#9AA096]">
+                  <div class="flex justify-between">
+                    <span>PRIVATE PREVIEW:</span>
+                    <span class="text-[#FAF7F2]">OCT 22, 10:00 CET</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>GLOBAL RELEASE:</span>
+                    <span class="text-[#FAF7F2]">OCT 24, 10:00 CET</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>ALLOCATION:</span>
+                    <span class="text-[#BC7152]">SUBSCRIBERS ONLY</span>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-end text-[9px] font-technical text-[#7A8077]">
+                  <span>CODE: NR-PRIV-AW26</span>
+                  <span class="text-white underline">LINK IN BIO</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Bottom Conversion Action CTA -->
+            <div class="border-t border-[#2C322E] pt-3">
+              <div class="flex justify-between items-baseline mb-1">
+                <h4 class="font-editorial text-xl text-[#FAF7F2]">Subscribers Preview</h4>
+                <span class="text-xs font-technical text-[#BC7152]">REGISTRATION ACTIVE</span>
+              </div>
+              <p class="font-sans-clean text-[11px] text-[#A2A89E] leading-snug">
+                Access is limited to 300 private clients before global public release. Register through the editorial portal.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Post Metadata & Rationale -->
+          <div class="mt-4 flex items-center justify-between text-xs">
+            <span class="font-technical text-[#BC7152]">POST 06 // CONVERSION CALL</span>
+            <span class="text-[#8A8F8A] font-technical">THE ACTION (CONVERSION)</span>
+          </div>
+          <p class="text-xs text-[#9FA39C] mt-1">High-urgency call that respects luxury dignity, driving email newsletter captures.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE MODAL INSPECTOR (BEHANCE DETAIL VIEW) -->
+  <div id="inspectorModal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#181B19] border border-[#2F3530] rounded-2xl max-w-3xl w-full p-8 relative shadow-2xl overflow-y-auto max-h-[90vh]">
+      <button onclick="closeInspector()" class="absolute top-6 right-6 text-xs font-technical text-[#8A8F8A] hover:text-white uppercase px-3 py-1 border border-[#3A423C] rounded">CLOSE [ESC]</button>
+      
+      <span id="modalCategory" class="text-xs font-technical text-[#BC7152] uppercase tracking-widest block mb-2">CATEGORY</span>
+      <h3 id="modalTitle" class="font-editorial text-3xl md:text-4xl text-[#FAF7F2] mb-4">Post Title</h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-[#2A302B]">
+        <div>
+          <h4 class="text-xs font-technical text-[#BC7152] uppercase mb-2">ART DIRECTION &amp; COMPOSITION</h4>
+          <p id="modalArtDirection" class="text-xs text-[#A8AEA3] leading-relaxed">Art direction details...</p>
+
+          <h4 class="text-xs font-technical text-[#BC7152] uppercase mt-4 mb-2">TYPOGRAPHIC ANATOMY</h4>
+          <p id="modalTypography" class="text-xs text-[#A8AEA3] leading-relaxed">Typography specs...</p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-technical text-[#BC7152] uppercase mb-2">COPYWRITING &amp; CAPTION SPECIMEN</h4>
+          <div id="modalCopywriting" class="bg-[#111311] p-4 rounded-lg border border-[#282E29] text-xs font-sans-clean text-[#D0CDC6] italic leading-relaxed">
+            Caption text...
+          </div>
+
+          <h4 class="text-xs font-technical text-[#BC7152] uppercase mt-4 mb-2">MARKETING KPI &amp; REASONING</h4>
+          <p id="modalKpi" class="text-xs text-[#A8AEA3] leading-relaxed">Marketing metrics...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: ART DIRECTION & DESIGN SYSTEM -->
+  <section id="design-system" class="py-24 px-6 md:px-16 border-b border-[#252926] bg-[#141715]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#252926]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">VISUAL SYSTEM MATRIX</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">Art Direction &amp; Standards</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">EDITORIAL COHESION ACROSS ALL TOUCHPOINTS</p>
+      </div>
+
+      <!-- COLOR PALETTE CHIPS -->
+      <div class="mb-16">
+        <h3 class="text-xs font-technical text-[#BC7152] uppercase tracking-widest mb-6">CAMPAIGN COLOR SPECTRUM</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          
+          <div class="p-4 bg-[#1A1D1B] rounded-xl border border-[#2D332F]">
+            <div class="h-20 rounded-lg mb-3 shadow-inner" style="background-color: #E5E1D8;"></div>
+            <span class="text-[9px] font-technical text-[#BC7152] block uppercase">CANVAS LIGHT</span>
+            <p class="font-editorial text-base text-[#FAF7F2]">Raw Unbleached Wool</p>
+            <p class="text-[10px] font-technical text-[#8A8F8A] mt-1">HEX: #E5E1D8</p>
+          </div>
+
+          <div class="p-4 bg-[#1A1D1B] rounded-xl border border-[#2D332F]">
+            <div class="h-20 rounded-lg mb-3 shadow-inner" style="background-color: #161816;"></div>
+            <span class="text-[9px] font-technical text-[#BC7152] block uppercase">BASE DARK</span>
+            <p class="font-editorial text-base text-[#FAF7F2]">Charcoal Melange</p>
+            <p class="text-[10px] font-technical text-[#8A8F8A] mt-1">HEX: #161816</p>
+          </div>
+
+          <div class="p-4 bg-[#1A1D1B] rounded-xl border border-[#2D332F]">
+            <div class="h-20 rounded-lg mb-3 shadow-inner" style="background-color: #D6D3CD;"></div>
+            <span class="text-[9px] font-technical text-[#BC7152] block uppercase">ARCHITECTURAL TONE</span>
+            <p class="font-editorial text-base text-[#FAF7F2]">Cold Concrete</p>
+            <p class="text-[10px] font-technical text-[#8A8F8A] mt-1">HEX: #D6D3CD</p>
+          </div>
+
+          <div class="p-4 bg-[#1A1D1B] rounded-xl border border-[#2D332F]">
+            <div class="h-20 rounded-lg mb-3 shadow-inner" style="background-color: #544336;"></div>
+            <span class="text-[9px] font-technical text-[#BC7152] block uppercase">ACCENT ORGANIC</span>
+            <p class="font-editorial text-base text-[#FAF7F2]">Natural Horn</p>
+            <p class="text-[10px] font-technical text-[#8A8F8A] mt-1">HEX: #544336</p>
+          </div>
+
+          <div class="p-4 bg-[#1A1D1B] rounded-xl border border-[#2D332F]">
+            <div class="h-20 rounded-lg mb-3 shadow-inner" style="background-color: #BC7152;"></div>
+            <span class="text-[9px] font-technical text-[#BC7152] block uppercase">SIGNAL ACCENT</span>
+            <p class="font-editorial text-base text-[#FAF7F2]">Ochre Kaolin</p>
+            <p class="text-[10px] font-technical text-[#8A8F8A] mt-1">HEX: #BC7152</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TYPOGRAPHY SYSTEM COMPARISON -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2C322E]">
+          <span class="text-[10px] font-technical text-[#BC7152] block mb-2">TIER 01: EDITORIAL VOICE</span>
+          <h4 class="font-editorial text-3xl text-[#FAF7F2] mb-3">Didot &amp; Bodoni MT</h4>
+          <p class="text-xs text-[#9FA39C] leading-relaxed">
+            Reserved exclusively for hero collection names, manifesto excerpts, and brand logotypes. Set with generous tracking (+150em) to communicate unhurried luxury.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2C322E]">
+          <span class="text-[10px] font-technical text-[#BC7152] block mb-2">TIER 02: COMMERCIAL CLARITY</span>
+          <h4 class="font-sans-clean text-2xl font-semibold text-[#FAF7F2] mb-3">Neue Haas Grotesk</h4>
+          <p class="text-xs text-[#9FA39C] leading-relaxed">
+            Used for product nomenclature, pricing, fit descriptions, and body copy. Delivers clinical legibility without emotional distraction.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2C322E]">
+          <span class="text-[10px] font-technical text-[#BC7152] block mb-2">TIER 03: TECHNICAL VERIFICATION</span>
+          <h4 class="font-technical text-2xl text-[#FAF7F2] mb-3">SF Mono / Space Mono</h4>
+          <p class="text-xs text-[#9FA39C] leading-relaxed">
+            Applied to SKU codes, fiber weights (GSM), geographic coordinates, and release times. Gives the brand laboratory precision and provenance transparency.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: MARKETING LOGIC & FEED CADENCE -->
+  <section id="marketing-strategy" class="py-24 px-6 md:px-16 border-b border-[#252926] bg-[#121413]">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-[#252926]">
+        <div>
+          <span class="text-xs font-technical uppercase tracking-[0.25em] text-[#BC7152] block mb-2">PRACTICAL MARKETING EXECUTION</span>
+          <h2 class="font-editorial text-4xl md:text-5xl text-[#FAF7F2]">The 14-Day Release Cadence</h2>
+        </div>
+        <p class="text-xs font-technical text-[#8A8F8A] mt-4 md:mt-0 uppercase">HOW THE 6 POSTS CONVERT PASSIVE BROWSERS INTO BUYERS</p>
+      </div>
+
+      <!-- TIMELINE / MARKETING FLOW -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Phase 1 -->
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2D332E]">
+          <span class="text-xs font-technical text-[#BC7152] block mb-2">DAYS T-14 TO T-10 // PHASE 01</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Atmospheric Tease</h4>
+          <p class="text-xs text-[#9FA39C] leading-relaxed mb-4">
+            Deploying **Post 01 (Campaign Hero)** &amp; **Post 02 (The Manifesto)**. The goal is to set the visual vocabulary, signal exclusivity, and reset follower expectations before any product purchase links go live.
+          </p>
+          <div class="text-[10px] font-technical text-[#8A8F8A] pt-3 border-t border-[#292F2B]">
+            PRIMARY KPI: Post Saves &amp; Story Re-shares
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2D332E]">
+          <span class="text-xs font-technical text-[#BC7152] block mb-2">DAYS T-9 TO T-4 // PHASE 02</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Desire &amp; Material Proof</h4>
+          <p class="text-xs text-[#9FA39C] leading-relaxed mb-4">
+            Deploying **Post 03 (Brancusi Trouser)** &amp; **Post 04 (Macro Horn Button Detail)**. By introducing specific garment cuts alongside extreme macro fabric proofs, perceived value is anchored well above the price-tag.
+          </p>
+          <div class="text-[10px] font-technical text-[#8A8F8A] pt-3 border-t border-[#292F2B]">
+            PRIMARY KPI: Product Tag Clicks &amp; Website Wishlists
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="p-6 bg-[#181B19] rounded-xl border border-[#2D332E]">
+          <span class="text-xs font-technical text-[#BC7152] block mb-2">DAYS T-3 TO LAUNCH // PHASE 03</span>
+          <h4 class="font-editorial text-2xl text-[#FAF7F2] mb-2">Conversion Acceleration</h4>
+          <p class="text-xs text-[#9FA39C] leading-relaxed mb-4">
+            Deploying **Post 05 (Still Life Tote)** &amp; **Post 06 (Private Client Pass)**. Creates natural scarcity with a strictly enforced 300-piece allocation, compelling direct email opt-ins for 48-hour early access.
+          </p>
+          <div class="text-[10px] font-technical text-[#8A8F8A] pt-3 border-t border-[#292F2B]">
+            PRIMARY KPI: Email Subscriber Capture &amp; Day 1 DTC Revenue
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO FOOTER -->
+  <footer class="py-16 px-6 md:px-16 bg-[#0E100F] border-t border-[#252926]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-xs font-technical text-[#7C8278]">
+      <div>
+        <p class="text-[#FAF7F2] font-editorial text-xl">STUDIO MØRK x NØRRE ARCHIVE</p>
+        <p class="mt-1">CONTEMPORARY FASHION SOCIAL MEDIA CAMPAIGN DESIGN CASE STUDY</p>
+      </div>
+      <div class="mt-6 md:mt-0 text-right">
+        <p>© 2026 FICTIONAL PORTFOLIO SPECIFICATION. ALL ASSETS DESIGNED FOR EDITORIAL HARMONY.</p>
+        <p class="mt-0.5 text-[#BC7152]">ZERO GENERIC AI AESTHETICS // REAL MARKETING INTEGRITY</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR INTERACTIVE MODAL INSPECTION -->
+  <script>
+    const postsData = {
+      1: {
+        category: "POST 01 // HERO SEASONAL CAMPAIGN LAUNCH",
+        title: "The Brutalist Silhouette Elevation",
+        artDirection: "Asymmetrical framing pairing full-length model silhouette against an unvarnished poured concrete architectural backdrop. Cold natural daylight with raking shadows accentuates the structured drape of 680gsm wool.",
+        typography: "Didot Display in wide tracking (+150em) balanced with Neue Haas Grotesk for secondary body. Strict Swiss grid ensures negative space breathes at the margins.",
+        copywriting: "NØRRE ARCHIVE — Collection 07: Forms in Concrete & Wool.\n\nA study in architectural reduction. We engineered each overcoat with zero internal synthetic pads, allowing the natural weight of 680gsm British lambswool to establish form.\n\nOnline globally 24.10 at 10:00 CET.\nEdition strictly limited to 250 numbered pieces.",
+        kpi: "Awareness & Saves. High-end imagery designed to be saved to mood boards and re-shared by fashion curators without feeling like an advertisement."
+      },
+      2: {
+        category: "POST 02 // TYPOGRAPHY-LED MANIFESTO & DROP",
+        title: "The Architectural Sanctuary Thesis",
+        artDirection: "Pure typographic poster on unbleached wool-tone substrate. Eliminates all photographic distraction to force the viewer to engage with the brand's intellectual philosophy and manufacturing principles.",
+        typography: "High-contrast editorial serif headline (+20pt size differential) grounded by a 3-column tabular monospace release matrix at the footer.",
+        copywriting: "\"A coat should not merely cover the body; it must construct a sanctuary.\"\n\nCollection 07 drops October 24 at 10:00 CET. Milled in Yorkshire. Finished by hand in our Stockholm atelier.\n\nEarly access dispatch opens 48 hours prior for registered archive clients. Tap link in bio to register.",
+        kpi: "Brand Authority & Re-shares. Quotes that challenge fast-fashion disposability consistently generate 3.2× higher text shares."
+      },
+      3: {
+        category: "POST 03 // COMMERCIAL PRODUCT PROMOTION",
+        title: "The Brancusi Wide-Leg Trouser",
+        artDirection: "Tactile flat-elevation crop focusing on the deep front pleat drape and horn buckle side-adjusters. Rendered with natural fabric twill weave in the background.",
+        typography: "Clear product title set in Didot paired with upfront, transparent pricing (£385) in bold grotesque, eliminating the frustrating 'DM for price' friction.",
+        copywriting: "The Brancusi Wide Trouser in Italian Raw Wool Twill.\n\nEngineered with a high-rise Hollywood waistband, twin forward pleats, and horn side-adjusters. Unlined for natural breathability and fluid drape.\n\n£385 — Available October 24 in Charcoal, Bitter Chocolate, and Raw Oat.",
+        kpi: "Consideration & Product Clicks. Clear pricing and transparent cut description drive high-intent visits directly to product detail pages (PDP)."
+      },
+      4: {
+        category: "POST 04 // DETAIL & CRAFTSMANSHIP STUDY",
+        title: "Tactile Shetland Carded Wool & Horn",
+        artDirection: "Extreme macro optical study capturing the texture of 4-ply Shetland wool and natural matte horn buttons. Real fibers and organic button grain demonstrate artisanal integrity.",
+        typography: "Clinical technical data overlay (680 GSM, 400x magnification) rendered in SF Mono for laboratory-grade proof.",
+        copywriting: "Texture under inspection: 680gsm Scottish carded wool paired with natural unlacquered horn buttons.\n\nWe source our fleece exclusively from heritage flocks in the Scottish Borders, spinning without chemical scouring to preserve the natural lanolin coat.\n\nDetails make the archive.",
+        kpi: "Value Justification & Overcoming Price Resistance. Close-up proof directly mitigates customer hesitation around high price points."
+      },
+      5: {
+        category: "POST 05 // STILL LIFE EDITORIAL",
+        title: "The Monolith Box Calf Leather Tote",
+        artDirection: "Sculptural still life placing the structured leather bag on an unpolished travertine limestone block. Directional warm daylight casts clean geometric shadows, treating the bag as a museum object.",
+        typography: "Minimalist upper and lower editorial margins with small-caps atelier indexing.",
+        copywriting: "Object 03: The Monolith Box Tote.\n\nConstructed from vegetable-tanned Tuscan bridle leather. Raw burnished edges, hand-stitched saddle thread, and zero exterior branding save for our micro blind-debossed coordinate stamp.\n\nDesigned to age with you.",
+        kpi: "Aesthetic Elevation & Cross-Category Conversion. Still-life posts diversify the feed aesthetic and cross-sell leather goods to apparel buyers."
+      },
+      6: {
+        category: "POST 06 // PRIVATE CLIENT PREVIEW CONVERSION",
+        title: "Subscribers 48-Hour Early Access Pass",
+        artDirection: "Minimalist Swiss pass format featuring clean cryptographic verification elements, strict release schedule, and an understated 'Link in Bio' call to action.",
+        typography: "Tabular data alignment with strict baseline hierarchy, using signal accent Ochre Kaolin for key time stamps.",
+        copywriting: "Private Archive Access // AW26.\n\nSubscribers receive 48-hour advance access to Collection 07 beginning October 22 at 10:00 CET, prior to global release.\n\nStrictly 250 units produced across all styles. No reorders will be placed.\n\nRegister via the editorial portal link in bio.",
+        kpi: "Direct Conversion & Newsletter List Growth. Drives qualified VIP customer acquisition before the public launch."
+      }
+    };
+
+    function openInspector(id) {
+      const data = postsData[id];
+      if (!data) return;
+      document.getElementById('modalCategory').innerText = data.category;
+      document.getElementById('modalTitle').innerText = data.title;
+      document.getElementById('modalArtDirection').innerText = data.artDirection;
+      document.getElementById('modalTypography').innerText = data.typography;
+      document.getElementById('modalCopywriting').innerText = data.copywriting;
+      document.getElementById('modalKpi').innerText = data.kpi;
+      
+      document.getElementById('inspectorModal').classList.remove('hidden');
+    }
+
+    function closeInspector() {
+      document.getElementById('inspectorModal').classList.add('hidden');
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeInspector();
+    });
+  </script>
+
+</body>
+</html>
